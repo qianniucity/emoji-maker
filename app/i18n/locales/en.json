@@ -287,6 +287,161 @@
     "services": {
       "title": "Our Services",
       "description": "Explore our AI-powered emoji creation services and enterprise solutions"
+    },
+    "privacy": {
+      "title": "Privacy Policy | Emoji Maker",
+      "description": "Learn how Emoji Maker protects your privacy and handles your data"
+    },
+    "terms": {
+      "title": "Terms of Service | Emoji Maker",
+      "description": "Read our Terms of Service to understand your rights and responsibilities when using Emoji Maker"
+    },
+    "cookies": {
+      "title": "Cookie Policy | Emoji Maker",
+      "description": "Learn about how we use cookies and similar technologies on Emoji Maker"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "date": "March 15, 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "At Emoji Maker, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our AI-powered emoji creation service. By using our service, you agree to the collection and use of information in accordance with this policy."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We collect the following types of information to provide and improve our service:",
+        "items": {
+          "0": "Account information (email, name, and profile picture) when you sign up",
+          "1": "Usage data (emoji creations, interactions, and preferences)",
+          "2": "Technical information (browser type, device info, and IP address)",
+          "3": "Payment information when you upgrade to our Pro plan (processed securely through our payment provider)",
+          "4": "Communications you have with our support team"
+        }
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "content": "We use your information for the following purposes:",
+        "items": {
+          "0": "To provide and maintain our service, including generating AI-powered emojis",
+          "1": "To improve our service based on how you use it",
+          "2": "To communicate with you about updates, support, and promotional offers",
+          "3": "To detect and prevent fraud or abuse of our service"
+        }
+      },
+      "sharing": {
+        "title": "Information Sharing",
+        "content": "We don't sell your personal information. We only share your information with third parties when necessary to provide our service (like with our AI provider Replicate), when required by law, or with your explicit consent."
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement industry-standard security measures to protect your personal information. This includes encryption, secure servers, and regular security audits. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "content": "We use cookies and similar tracking technologies to improve your experience on our site. You can control cookie settings through your browser preferences."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "You have several rights regarding your personal information:",
+        "items": {
+          "0": "Access and download your personal data",
+          "1": "Request corrections to your information",
+          "2": "Delete your account and associated data",
+          "3": "Opt-out of marketing communications"
+        }
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@qianniuspace.com."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "date": "March 15, 2024",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using Emoji Maker, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our service."
+      },
+      "services": {
+        "title": "Description of Services",
+        "content": "Emoji Maker provides an AI-powered platform for creating custom emojis. We reserve the right to modify, suspend, or discontinue any part of our service at any time."
+      },
+      "accounts": {
+        "title": "User Accounts",
+        "content": "When creating an account, you must:",
+        "items": {
+          "0": "Provide accurate and complete information",
+          "1": "Maintain the security of your account credentials",
+          "2": "Promptly update any changes to your information",
+          "3": "Accept responsibility for all activities under your account"
+        }
+      },
+      "content": {
+        "title": "User Content",
+        "content": "You retain ownership of your content but grant us license to:",
+        "items": {
+          "0": "Use, display, and store your content",
+          "1": "Modify content to provide our services",
+          "2": "Share content according to your settings",
+          "3": "Remove content that violates our policies",
+          "4": "Use content for service improvement"
+        }
+      },
+      "payment": {
+        "title": "Payment Terms",
+        "content": "Pro plan subscriptions are billed in advance on a monthly or annual basis. Refunds are handled according to our refund policy. Free credits and promotional offers may be subject to additional terms."
+      },
+      "termination": {
+        "title": "Account Termination",
+        "content": "We may suspend or terminate accounts that violate our terms, engage in fraudulent activity, or harm our community. You may delete your account at any time."
+      },
+      "disclaimer": {
+        "title": "Disclaimer of Warranties",
+        "content": "Our service is provided 'as is' without warranties of any kind, either express or implied. We do not guarantee uninterrupted or error-free service."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "For questions about these Terms of Service, please contact us at terms@qianniuspace.com."
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last Updated",
+    "date": "March 15, 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "This Cookie Policy explains how Emoji Maker uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them."
+      },
+      "what": {
+        "title": "What Are Cookies",
+        "content": "Cookies are small data files placed on your device when you visit a website. They are widely used to make websites work more efficiently and provide reporting information."
+      },
+      "types": {
+        "title": "Types of Cookies We Use",
+        "content": "We use the following types of cookies:",
+        "items": {
+          "0": "Essential cookies: Required for basic site functionality",
+          "1": "Performance cookies: Help us understand how visitors use our site",
+          "2": "Functionality cookies: Remember your preferences",
+          "3": "Targeting cookies: Help make our advertising more relevant"
+        }
+      },
+      "control": {
+        "title": "Your Cookie Controls",
+        "content": "Most browsers allow you to control cookies through their settings. However, if you limit the ability of websites to set cookies, you may impact your overall user experience."
+      },
+      "contact": {
+        "title": "Questions?",
+        "content": "If you have any questions about our use of cookies, please contact us at privacy@qianniuspace.com."
+      }
     }
   }
 }

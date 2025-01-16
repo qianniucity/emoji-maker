@@ -40,7 +40,7 @@ export function generateMetadata(locale: string, page: string = 'default'): Meta
       description: messages.metadata[page].description,
     },
     other: {
-      'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+      'google-site-verification': process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? '',
     }
   }
 } 
