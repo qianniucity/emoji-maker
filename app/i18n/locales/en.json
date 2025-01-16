@@ -442,6 +442,11 @@
         "title": "Questions?",
         "content": "If you have any questions about our use of cookies, please contact us at privacy@qianniuspace.com."
       }
+    },
+    "consent": {
+      "message": "We use cookies to improve your experience and analyze site traffic. By continuing to use our site, you agree to our cookie policy.",
+      "accept": "Accept",
+      "decline": "Decline"
     }
   }
 }

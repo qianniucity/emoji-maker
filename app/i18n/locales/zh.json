@@ -442,6 +442,11 @@
         "title": "有疑问？",
         "content": "如果您对我们使用 cookie 有任何疑问，请通过 privacy@qianniuspace.com 与我们联系。"
       }
+    },
+    "consent": {
+      "message": "我们使用 cookie 来改善您的体验并分析网站流量。继续使用我们的网站即表示您同意我们的 cookie 政策。",
+      "accept": "接受",
+      "decline": "拒绝"
     }
   }
 }
