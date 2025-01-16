@@ -7,20 +7,15 @@ import Header from "@/app/components/headers";
 import { FooterSection } from '@/app/components/ui/footer-section';
 import { ThemeProvider } from "@/components/theme-provider";
 import { defaultMetadata } from '../config/metadata';
-import localFont from "next/font/local";
 import "../globals.css";
+import { headers } from 'next/headers'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import { cn } from '@/lib/utils'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { siteConfig } from '../config/metadata'
 
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata = defaultMetadata;
 
@@ -35,6 +30,10 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const headersList = headers()
+  const domain = headersList.get('host') || ''
+  const fullUrl = headersList.get('referer') || ''
+
   if (!locales.includes(locale as any)) {
     notFound();
   }
@@ -43,8 +42,39 @@ export default async function LocaleLayout({
 
   return (
     <ClerkProvider>
-      <html lang={locale} suppressHydrationWarning>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+      <html 
+        lang={locale} 
+        suppressHydrationWarning 
+        className={cn(
+          GeistSans.variable,
+          GeistMono.variable,
+        )}
+      >
+        <head>
+          <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+          <link rel="dns-prefetch" href="//api.qianniuspace.com" />
+          
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          <link rel="preconnect" href="https://api.qianniuspace.com" crossOrigin="" />
+          
+          <link
+            rel="preload"
+            href="/fonts/GeistVF.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link 
+            rel="preload" 
+            href={`${siteConfig.url}/logo.png`}
+            as="image"
+          />
+          
+          <link rel="canonical" href={`https://${domain}/${locale}`} />
+          <meta property="og:url" content={fullUrl} />
+        </head>
+        <body className="antialiased min-h-screen flex flex-col">
           <I18nProvider locale={locale} messages={messages}>
             <ThemeProvider
               attribute="class"
@@ -59,6 +89,8 @@ export default async function LocaleLayout({
               <FooterSection />
             </ThemeProvider>
           </I18nProvider>
+          <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>

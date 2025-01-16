@@ -3,14 +3,14 @@
 import { useRouter, usePathname } from 'next/navigation';
 import { Button } from './button';
 import { Globe } from 'lucide-react';
-import { locales, localeNames, localeConfigs } from '@/app/i18n/config/locales';
+import { locales, localeMetadata } from '@/app/i18n/config/locales';
 import { useTranslation } from '@/app/i18n/hooks/useTranslation';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/app/components/ui/dropdown-menu";
+} from "./dropdown-menu";
 
 export function LanguageSwitcher() {
   const router = useRouter();
@@ -37,8 +37,8 @@ export function LanguageSwitcher() {
             onClick={() => switchLanguage(locale)}
             className={locale === currentLocale ? 'bg-primary/10' : ''}
           >
-            <span className="mr-2">{localeConfigs[locale].flag}</span>
-            {localeNames[locale]}
+            <span className="mr-2">{localeMetadata[locale].icon}</span>
+            {localeMetadata[locale].localName}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

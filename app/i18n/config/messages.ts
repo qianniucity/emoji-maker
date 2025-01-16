@@ -1,4 +1,6 @@
-import { Locale } from './locales';
+import type { locales } from './locales';
+
+export type Locale = typeof locales[number];
 
 export type Messages = {
   common: {

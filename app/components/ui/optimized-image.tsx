@@ -1,33 +1,27 @@
-import Image from 'next/image'
-import { useState } from 'react'
-import { LoadingSpinner } from './loading-spinner'
+import Image, { ImageProps } from 'next/image'
+import { cn } from '@/lib/utils'
 
-interface OptimizedImageProps {
-  src: string
-  alt: string
-  width: number
-  height: number
-  className?: string
+interface OptimizedImageProps extends ImageProps {
+  aspectRatio?: string
 }
 
-export function OptimizedImage({ src, alt, width, height, className }: OptimizedImageProps) {
-  const [isLoading, setIsLoading] = useState(true)
-
+export function OptimizedImage({ 
+  src, 
+  alt, 
+  className, 
+  aspectRatio = 'aspect-square',
+  ...props 
+}: OptimizedImageProps) {
   return (
-    <div className="relative">
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <LoadingSpinner />
-        </div>
-      )}
+    <div className={cn('overflow-hidden', aspectRatio, className)}>
       <Image
+        {...props}
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
-        onLoadingComplete={() => setIsLoading(false)}
-        priority
+        className={cn('object-cover w-full h-full', className)}
+        loading="lazy"
+        decoding="async"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   )

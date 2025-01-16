@@ -15,7 +15,7 @@ export function EmojiGrid() {
 
   const shareToTwitter = (imageUrl: string, prompt: string) => {
     const tweetText = encodeURIComponent(`AI-generated emoji: "${prompt}"`);
-    const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${encodeURIComponent(imageUrl)}`;
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${encodeURIComponent(imageUrl)}&via=esx_ai`;
     window.open(tweetUrl, '_blank');
   };
 
