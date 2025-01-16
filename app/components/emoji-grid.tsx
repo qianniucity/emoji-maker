@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
-import { Download, Heart } from 'lucide-react';
+import { Download, Heart, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEmojiStore } from '@/app/store/emoji-store';
 
@@ -12,6 +12,12 @@ export function EmojiGrid() {
   useEffect(() => {
     fetchEmojis();
   }, [fetchEmojis]);
+
+  const shareToTwitter = (imageUrl: string, prompt: string) => {
+    const tweetText = encodeURIComponent(`AI-generated emoji: "${prompt}"`);
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${encodeURIComponent(imageUrl)}`;
+    window.open(tweetUrl, '_blank');
+  };
 
   if (!emojis.length) {
     return (
@@ -42,6 +48,14 @@ export function EmojiGrid() {
                 onClick={() => downloadEmoji(emoji.image_url)}
               >
                 <Download className="h-5 w-5" />
+              </Button>
+              <Button 
+                size="icon" 
+                variant="ghost" 
+                className="text-white hover:bg-white/20"
+                onClick={() => shareToTwitter(emoji.image_url, emoji.prompt)}
+              >
+                <Twitter className="h-5 w-5" />
               </Button>
               <Button 
                 size="icon" 
