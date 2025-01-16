@@ -1,25 +1,45 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import createIntlMiddleware from 'next-intl/middleware';
 import { NextResponse } from "next/server";
+import { locales, defaultLocale } from '@/app/i18n/config/locales';
 
 const isProtectedRoute = createRouteMatcher(['/']);
+const intlMiddleware = createIntlMiddleware({
+  locales,
+  defaultLocale,
+  localePrefix: 'always'
+});
 
 export default clerkMiddleware(async (auth, req) => {
-    const { userId,redirectToSignIn } = await auth();
-    if (!userId && isProtectedRoute(req)) {
-        return redirectToSignIn({returnBackUrl: '/'});
-    }
+    const { userId, redirectToSignIn } = await auth();
+    const pathname = new URL(req.url).pathname;
 
-    // if the user is logged in and the route is protected, let them view
-    if (userId && isProtectedRoute(req)) {
+    // 如果是 API 请求，直接处理，不进行国际化
+    if (pathname.startsWith('/api/')) {
         return NextResponse.next();
     }
+
+    // 处理根路径重定向
+    if (pathname === '/') {
+      return NextResponse.redirect(new URL(`/${defaultLocale}`, req.url));
+    }
+
+    // 处理国际化
+    const response = await intlMiddleware(req);
+    
+    // 检查认证
+    if (!userId && isProtectedRoute(req)) {
+        return redirectToSignIn({returnBackUrl: `/${defaultLocale}`});
+    }
+
+    return response;
 });
 
 export const config = {
   matcher: [
-    // Skip Next.js internals and all static files, unless found in search params
-    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
-    // Always run for API routes
-    '/(api|trpc)(.*)',
-  ],
+    // API 路由
+    '/api/:path*',
+    // 页面路由
+    '/((?!api|_next|_vercel|.*\\..*).*)',
+  ]
 };

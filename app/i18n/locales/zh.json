@@ -1,0 +1,270 @@
+{
+  "common": {
+    "title": "表情制作器",
+    "description": "使用 AI 驱动的工具创建自定义表情"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "services": "服务",
+    "quickLinks": "快速链接",
+    "products": "产品",
+    "contact": "联系我们"
+  },
+  "emoji": {
+    "generate": "生成表情",
+    "download": "下载",
+    "like": "点赞",
+    "share": "分享"
+  },
+  "footer": {
+    "stayConnected": "保持联系",
+    "newsletter": "订阅我们的新闻通讯，获取最新更新和独家优惠",
+    "emailPlaceholder": "输入您的邮箱",
+    "subscribe": "订阅",
+    "contact": {
+      "title": "联系我们",
+      "wechat": "联系 WeChat：brothers_talk",
+      "publicAccount": "公众号：brother-talks",
+      "email": "Email: king101125s@gmail.com"
+    },
+    "followUs": {
+      "title": "关注我们",
+      "bilibili": "在 Bilibili 关注我们",
+      "x": "在 X 关注我们",
+      "youtube": "在 Youtube 关注我们",
+      "github": "在 Github 关注我们"
+    },
+    "darkMode": "切换深色模式",
+    "copyright": "© 2024 qianniucity. 保留所有权利。",
+    "legal": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "cookies": "Cookie 设置"
+    }
+  },
+  "about": {
+    "title": "关于表情制作器",
+    "greeting": "👋 你好！",
+    "intro": "表情制作器是一个有趣的项目，让你使用 AI 创建自定义表情。想要一个完美表达你心情或想法的表情吗？现在就可以实现！",
+    
+    "features": {
+      "title": "✨ 特色功能",
+      "description": "我们将 Stable Diffusion (SDXL) 的强大功能与专门的表情模型相结合，将你的文字描述转化为独特、富有表现力的表情。只需输入你想要的内容，看着 AI 施展魔法。"
+    },
+    
+    "howItWorks": {
+      "title": "🛠️ 工作原理",
+      "steps": {
+        "0": "输入你的表情创意",
+        "1": "我们的 AI 处理你的描述",
+        "2": "几秒钟内获得自定义表情",
+        "3": "与社区分享",
+        "4": "下载并在任何地方使用"
+      }
+    },
+    
+    "forCreators": {
+      "title": "🎯 为创作者打造",
+      "description": "无论你是开发者、内容创作者，还是单纯热爱表情的用户，我们都能满足你的需求。每个新用户都可以获得免费积分来创建他们的第一个表情。"
+    },
+    
+    "community": {
+      "title": "🤝 社区至上",
+      "description": "这不仅仅是一个工具 - 这是一个表情爱好者的社区。点赞并分享你喜欢的作品，从他人那里获得灵感，成为有趣社区的一部分！"
+    },
+    
+    "techStack": {
+      "title": "💻 技术栈",
+      "intro": "对技术感兴趣的朋友们，我们使用了以下技术：",
+      "items": {
+        "0": "Next.js 14 作为框架",
+        "1": "Replicate AI 用于表情生成",
+        "2": "Supabase 作为后端",
+        "3": "Clerk 用于身份认证",
+        "4": "Tailwind CSS 用于样式设计"
+      }
+    },
+    
+    "getStarted": {
+      "title": "🚀 开始使用",
+      "description": "准备好创建你自己的表情了吗？返回",
+      "homepageLink": "首页",
+      "and": "开始创作吧！"
+    },
+    
+    "contact": {
+      "title": "📬 联系我们",
+      "description": "有问题或建议？我们很乐意听取你的意见！给我们发送邮件：",
+      "email": "king101125s@gmail.com"
+    },
+    
+    "footer": {
+      "madeWith": "由热爱表情的开发者用 ❤️ 制作"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题、反馈或只是想打个招呼？我们很乐意听到您的声音！",
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "subject": "主题",
+      "subjectPlaceholder": "关于什么？",
+      "message": "消息",
+      "messagePlaceholder": "告诉我们您的想法...",
+      "send": "发送消息"
+    },
+    "quickContact": {
+      "title": "快速联系",
+      "email": "邮箱",
+      "twitter": "@二师兄",
+      "github": "github.com/qianniucity/emoji-maker"
+    },
+    "faq": {
+      "title": "常见问题",
+      "questions": {
+        "credits": {
+          "title": "如何获得更多积分？",
+          "answer": "升级到我们的专业版可获得无限表情生成！"
+        },
+        "commercial": {
+          "title": "可以商用表情吗？",
+          "answer": "专业版用户可以获得所有生成表情的完整商业使用权。"
+        },
+        "support": {
+          "title": "需要技术支持？",
+          "answer": "查看我们的文档或联系支持团队。",
+          "docs": "文档"
+        }
+      }
+    },
+    "responseTime": {
+      "notice": "我们通常在工作日24小时内回复。",
+      "immediate": "如需即时帮助，请查看我们的",
+      "docs": "文档"
+    }
+  },
+  "products": {
+    "title": "选择您的方案",
+    "subtitle": "通过我们灵活的定价选项释放您的创意潜能",
+    "plans": {
+      "free": {
+        "title": "免费版",
+        "price": "¥0",
+        "period": "/月",
+        "tag": "入门",
+        "features": {
+          "0": "3次免费表情生成",
+          "1": "基础表情定制",
+          "2": "社区访问",
+          "3": "标准导出格式",
+          "4": "基础支持"
+        },
+        "cta": "开始使用"
+      },
+      "pro": {
+        "title": "专业版",
+        "price": "¥59",
+        "period": "/月",
+        "tag": "最受欢迎",
+        "features": {
+          "0": "无限表情生成",
+          "1": "高级表情定制",
+          "2": "优先处理",
+          "3": "所有导出格式",
+          "4": "优先支持"
+        },
+        "cta": "升级到专业版"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "items": {
+        "free": {
+          "question": "免费版包含什么？",
+          "answer": "免费版包含3次表情生成、基础定制选项和社区功能访问。非常适合试用我们的服务！"
+        },
+        "upgrade": {
+          "question": "可以随时升级或降级吗？",
+          "answer": "是的！您可以随时升级到专业版获取更多功能，或在计费周期结束时降级回免费版。"
+        },
+        "refund": {
+          "question": "提供退款吗？",
+          "answer": "我们为专业版提供7天退款保证。如果您不满意，只需告诉我们，我们将处理您的退款。"
+        },
+        "commercial": {
+          "question": "可以商用表情吗？",
+          "answer": "专业版订阅者可以获得所有生成表情的完整商业使用权。免费版用户只能将表情用于个人项目。"
+        }
+      }
+    },
+    "cta": {
+      "title": "准备开始创作了吗？",
+      "subtitle": "加入已经在制作精彩表情的数千名创作者",
+      "button": "立即开始创作"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "使用我们的AI驱动工具将您的想法转化为富有表现力的表情",
+    "features": {
+      "aiGeneration": {
+        "title": "AI表情生成",
+        "description": "使用我们的前沿AI技术，几秒钟内将您的想法转化为自定义表情。完美适合创建独特的表达方式。"
+      },
+      "customization": {
+        "title": "风格定制",
+        "description": "从各种艺术风格中选择，或创建您自己的风格。调整颜色、表情和细节以匹配您的品牌。"
+      },
+      "sharing": {
+        "title": "轻松分享",
+        "description": "直接分享您的创作到社交媒体或导出它们以在您喜欢的消息应用中使用。"
+      },
+      "export": {
+        "title": "批量导出",
+        "description": "以多种格式和尺寸下载您的表情。完美适配不同平台和使用场景。"
+      },
+      "priority": {
+        "title": "优先处理",
+        "description": "使用专业版跳过队列。在您最需要时获得更快的生成速度和优先支持。"
+      },
+      "license": {
+        "title": "商业许可",
+        "description": "使用专业版在商业项目中使用生成的表情。包含完整权利。"
+      }
+    },
+    "enterprise": {
+      "title": "企业解决方案",
+      "subtitle": "需要为您的企业定制解决方案？我们提供企业级功能，包括：",
+      "features": {
+        "team": {
+          "title": "团队管理",
+          "description": "管理多个用户、角色和权限。"
+        },
+        "security": {
+          "title": "增强安全",
+          "description": "高级安全功能和专用基础设施。"
+        },
+        "styling": {
+          "title": "自定义风格",
+          "description": "品牌特定的风格预设和指南。"
+        },
+        "support": {
+          "title": "专属支持",
+          "description": "24/7优先支持和咨询。"
+        }
+      },
+      "cta": "联系销售"
+    },
+    "finalCta": {
+      "title": "准备开始了吗？",
+      "subtitle": "加入已经使用我们平台的数千名创作者和企业",
+      "pricing": "查看价格",
+      "try": "免费试用"
+    }
+  }
+}

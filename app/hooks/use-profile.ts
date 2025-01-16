@@ -23,8 +23,16 @@ export function useProfile() {
       if (!user) return;
 
       try {
-        const response = await fetch('/api/profile');
-        if (!response.ok) throw new Error('Failed to fetch profile');
+        const response = await fetch('/api/profile', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         
         const data = await response.json();
         setProfile(data);

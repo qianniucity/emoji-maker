@@ -37,6 +37,8 @@ export function EmojiGrid() {
               src={emoji.image_url}
               alt={emoji.prompt}
               fill
+              priority
+              sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
               className="rounded-lg object-cover"
             />
             {/* Hover Overlay */}
