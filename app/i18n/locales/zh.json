@@ -266,5 +266,27 @@
       "pricing": "查看价格",
       "try": "免费试用"
     }
+  },
+  "metadata": {
+    "default": {
+      "title": "Emoji 制作器",
+      "description": "使用 AI 驱动的工具创建自定义表情"
+    },
+    "about": {
+      "title": "关于我们",
+      "description": "了解我们如何用 AI 技术革新表情创作"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "联系我们的团队获取支持、反馈或商务合作"
+    },
+    "products": {
+      "title": "价格方案",
+      "description": "选择最适合您的表情创作方案"
+    },
+    "services": {
+      "title": "我们的服务",
+      "description": "探索我们的 AI 驱动的表情创作服务和企业解决方案"
+    }
   }
 }

@@ -1,14 +1,7 @@
-import type { Metadata } from 'next'
-import { defaultMetadata } from '../../config/metadata'
+import { generateMetadata as generatePageMetadata } from '@/app/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Pricing & Plans',
-  description: 'Choose the perfect plan for your emoji creation needs',
-  openGraph: {
-    ...defaultMetadata.openGraph,
-    title: 'Pricing & Plans | Emoji Maker',
-    description: 'Choose the perfect plan for your emoji creation needs'
-  }
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  return generatePageMetadata(locale, 'products')
 }
 
 export default function ProductsLayout({

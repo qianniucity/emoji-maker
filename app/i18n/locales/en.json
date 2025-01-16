@@ -266,5 +266,27 @@
       "pricing": "View Pricing",
       "try": "Try for Free"
     }
+  },
+  "metadata": {
+    "default": {
+      "title": "Emoji Maker",
+      "description": "Create custom emojis with AI-powered tools"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about our mission to revolutionize emoji creation with AI technology"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with our team for support, feedback, or business inquiries"
+    },
+    "products": {
+      "title": "Pricing & Plans",
+      "description": "Choose the perfect plan for your emoji creation needs"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Explore our AI-powered emoji creation services and enterprise solutions"
+    }
   }
 }
