@@ -39,6 +39,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --theme-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
   .dark {
     --background: 240 10% 3.9%;
@@ -74,5 +75,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    transition: var(--theme-transition);
   }
 }

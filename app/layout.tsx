@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/app/components/headers";
 import { FooterSection } from './components/ui/footer-section';
 import { ThemeProvider } from "@/components/theme-provider";
+import { defaultMetadata } from './config/metadata'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,10 +18,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Emoj maker",
-  description: "Emoj maker",
-};
+export const metadata = defaultMetadata
 
 export default function RootLayout({
   children,

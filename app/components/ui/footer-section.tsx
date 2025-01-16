@@ -56,21 +56,36 @@ function FooterSection() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <Link href="/" className="block transition-colors hover:text-primary">
+              <Link 
+                href="/" 
+                className="block transition-colors hover:text-primary"
+              >
                 Home
               </Link>
-              <Link href="/about" className="block transition-colors hover:text-primary">
+              <Link 
+                href="/about" 
+                className="block transition-colors hover:text-primary"
+              >
                 About Us
               </Link>
-              <a href="/services" className="block transition-colors hover:text-primary">
+              <Link 
+                href="/services" 
+                className="block transition-colors hover:text-primary"
+              >
                 Services
-              </a>
-              <a href="/products" className="block transition-colors hover:text-primary">
+              </Link>
+              <Link 
+                href="/products" 
+                className="block transition-colors hover:text-primary"
+              >
                 Products
-              </a>
-              <a href="/contact" className="block transition-colors hover:text-primary">
+              </Link>
+              <Link 
+                href="/contact" 
+                className="block transition-colors hover:text-primary"
+              >
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
           <div>
