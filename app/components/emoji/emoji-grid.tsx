@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useCallback, memo, useMemo, Suspense } from 'react';
+import { useEffect, useCallback, useMemo, Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import { useEmojiStore } from '@/app/store/emoji-store';
 import { toast } from '@/app/components/ui/use-toast';
@@ -15,7 +15,7 @@ export function EmojiGrid() {
   const { emojis, fetchEmojis, toggleLike, downloadEmoji, isLoading } = useEmojiStore();
 
   useEffect(() => {
-    fetchEmojis().catch((error) => {
+    fetchEmojis().catch(() => {
       toast({
         title: 'Error',
         description: 'Failed to fetch emojis',

@@ -1,9 +1,13 @@
+'use client';
+
 import Script from 'next/script'
 import { siteConfig } from '@/app/config/metadata'
 
+type StructuredDataType = 'aboutPage' | 'product' | 'service' | 'organization'
+
 interface StructuredDataProps {
   locale: string
-  type: 'aboutPage' | 'product' | 'service' | 'organization'
+  type: StructuredDataType
   title: string
   description: string
   dateModified?: string
@@ -68,32 +72,7 @@ export function StructuredData({
   }
 
   return (
-    <Script id="structured-data" type="application/ld+json">
-      {JSON.stringify(jsonLd)}
-    </Script>
-  )
-}
-
-export function OrganizationStructuredData() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: siteConfig.name,
-    url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.png`,
-    sameAs: [
-      siteConfig.links.twitter,
-      siteConfig.links.github
-    ],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'support@qianniuspace.com',
-      contactType: 'customer service'
-    }
-  }
-
-  return (
-    <Script id="org-structured-data" type="application/ld+json">
+    <Script id={`structured-data-${type}`} type="application/ld+json">
       {JSON.stringify(jsonLd)}
     </Script>
   )

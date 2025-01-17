@@ -3,24 +3,9 @@
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
+import type { GoogleAnalyticsProps } from '@/app/types/google-analytics';
 
-// Declare gtag as a property on the window object
-declare global {
-  interface Window {
-    gtag: (
-      command: string,
-      target: string,
-      config?: Record<string, unknown>
-    ) => void;
-    dataLayer: unknown[];
-  }
-}
-
-export default function GoogleAnalytics({
-  GA_MEASUREMENT_ID,
-}: {
-  GA_MEASUREMENT_ID: string;
-}) {
+export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -54,4 +39,4 @@ export default function GoogleAnalytics({
       />
     </>
   );
-} 
+}

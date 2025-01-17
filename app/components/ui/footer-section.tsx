@@ -1,20 +1,8 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import { useTheme } from "next-themes"
-import { Button } from "./button"
-import { Input } from "./input"
-import { Label } from "./label"
-import { Switch } from "./switch"
 import { useTranslation } from "@/app/i18n/hooks/useTranslation"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "./tooltip"
-import { Moon, Send, Sun, Github, X, Tv, Youtube } from "lucide-react"
 import dynamic from 'next/dynamic'
 
 // Lazy loaded components

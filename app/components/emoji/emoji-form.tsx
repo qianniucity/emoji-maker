@@ -131,7 +131,6 @@ export function EmojiForm() {
     }
   }, [profile, prompt, setLoading, addEmoji]);
 
-  const isSubmitDisabled = !prompt.trim() || isLoading;
 
   return (
     <form 
