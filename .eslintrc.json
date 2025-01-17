@@ -1,3 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@next/next/no-img-element": ["error", {
+      "ignore": ["opengraph-image.tsx", "twitter-image.tsx"]
+    }],
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-empty-interface": "error",
+    "@typescript-eslint/no-require-imports": "error"
+  }
 }

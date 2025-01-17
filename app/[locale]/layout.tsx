@@ -37,11 +37,11 @@ export default async function LocaleLayout({
     const domain = headersList.get('host') || ''
     const fullUrl = headersList.get('referer') || ''
 
-    if (!locales.includes(locale as any)) {
+    if (!locales.includes(locale as "en" | "zh")) {
         notFound();
     }
 
-    const messages = await loadMessages(locale as any);
+    const messages = await loadMessages(locale as "en" | "zh");
 
     return (
         <IntlProvider locale={locale}>

@@ -7,20 +7,20 @@ import { notFound } from 'next/navigation';
 async function getMessages(locale: string) {
   try {
     return (await import(`@/app/i18n/locales/${locale}.json`)).default;
-  } catch (error) {
+  } catch {
     notFound();
   }
 }
 
-export default async function IntlProvider({
+export default function IntlProvider({
   children,
-  locale
+  locale,
+  messages
 }: {
   children: React.ReactNode;
   locale: string;
+  messages: Record<string, any>;
 }) {
-  const messages = await getMessages(locale);
-  
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {children}

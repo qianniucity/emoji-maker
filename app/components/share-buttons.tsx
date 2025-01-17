@@ -10,7 +10,7 @@ interface ShareButtonsProps {
   image?: string
 }
 
-export function ShareButtons({ url, title, description, image }: ShareButtonsProps) {
+export function ShareButtons({ url, title, description }: ShareButtonsProps) {
   const { t } = useTranslation()
 
   const shareData = {

@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import { defaultMetadata, siteConfig } from '../config/metadata'
 import { locales, localeMetadata } from '../i18n/config/locales'
 
-export function generateMetadata(locale: string, page: string = 'default'): Metadata {
-  const messages = require(`../i18n/locales/${locale}.json`)
+export async function generateMetadata(locale: string, page: string = 'default'): Promise<Metadata> {
+  const messages = await import(`../i18n/locales/${locale}.json`).then(m => m.default);
   const currentLocale = locale === 'zh' ? 'zh-CN' : 'en-US'
   
   const alternateLanguages = locales.reduce((acc, lang) => {
