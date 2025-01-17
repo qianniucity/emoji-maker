@@ -4,6 +4,8 @@ import { StructuredData } from "@/app/components/structured-data";
 import Link from 'next/link';
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 
+export { runtime } from '@/app/config/runtime';
+
 export default function About() {
   const { t, locale } = useTranslation();
   

@@ -3,6 +3,8 @@
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 import { StructuredData } from "@/app/components/structured-data";
 
+export { runtime } from '@/app/config/runtime';
+
 export default function Cookies() {
   const { t, locale } = useTranslation();
 

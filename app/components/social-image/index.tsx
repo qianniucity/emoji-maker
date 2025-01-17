@@ -6,6 +6,7 @@ interface SocialImageProps {
   showExamples?: boolean;
 }
 
+/* eslint-disable @next/next/no-img-element */
 export async function generateSocialImage({ locale, showExamples = false }: SocialImageProps) {
   const title = locale === 'zh' ? 'Emoji 制作器' : 'Emoji Maker';
   const description = locale === 'zh'

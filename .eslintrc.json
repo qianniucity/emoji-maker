@@ -1,12 +1,18 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "@next/next/no-img-element": ["error", {
-      "ignorePaths": ["**/opengraph-image.tsx", "**/twitter-image.tsx"]
-    }],
+    "@next/next/no-img-element": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-empty-interface": "error",
     "@typescript-eslint/no-require-imports": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/opengraph-image.tsx", "**/twitter-image.tsx"],
+      "rules": {
+        "@next/next/no-img-element": "off"
+      }
+    }
+  ]
 }
