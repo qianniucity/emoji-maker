@@ -2,8 +2,6 @@ import { auth } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase/client';
 
-export { runtime } from '@/app/config/runtime';
-
 export async function GET() {
   try {
     const { userId } = await auth();
@@ -49,3 +47,4 @@ export async function GET() {
 export const fetchCache = 'force-no-store'
 export const revalidate = 0
 export const dynamic = 'force-dynamic'
+export const runtime = 'edge'

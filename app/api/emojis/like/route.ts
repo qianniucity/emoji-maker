@@ -102,4 +102,4 @@ export async function POST(request: Request) {
 
 // Add these configurations
 export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
+export const runtime = 'edge';
