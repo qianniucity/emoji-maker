@@ -11,12 +11,30 @@ export const metadata: Metadata = {
   creator: 'qianniucity',
   publisher: 'qianniucity',
   metadataBase: new URL('https://emoji.qianniuspace.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://emoji.qianniuspace.com',
+    title: 'Emoji Maker',
+    description: 'Create custom emojis with AI-powered tools',
+    siteName: 'Emoji Maker'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Emoji Maker',
+    description: 'Create custom emojis with AI-powered tools',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 }
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return children
 }

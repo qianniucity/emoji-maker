@@ -1,28 +1,91 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback, memo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Loader2 } from 'lucide-react';
 import { useEmojiStore } from '@/app/store/emoji-store';
 import { useProfile } from '@/app/hooks/use-profile';
+import { toast } from '@/app/components/ui/use-toast';
+import type { FormEvent, ChangeEvent } from 'react';
+
+// Memoized submit button component
+const SubmitButton = memo(({ isLoading }: { isLoading: boolean }) => (
+  <Button 
+    type="submit" 
+    disabled={isLoading}
+    aria-label={isLoading ? 'Generating emoji...' : 'Generate emoji'}
+  >
+    {isLoading ? (
+      <>
+        <Loader2 className="mr-2 h-4 w-4 animate-spin" aria-hidden="true" />
+        Generating...
+      </>
+    ) : (
+      'Generate'
+    )}
+  </Button>
+));
+
+SubmitButton.displayName = 'SubmitButton';
+
+// Memoized input component
+const PromptInput = memo(({ 
+  value, 
+  onChange, 
+  isLoading 
+}: { 
+  value: string; 
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  isLoading: boolean;
+}) => (
+  <Input
+    type="text"
+    placeholder="Enter a prompt to generate an emoji"
+    value={value}
+    onChange={onChange}
+    className="flex-1"
+    disabled={isLoading}
+    required
+    minLength={3}
+    maxLength={100}
+    aria-label="Emoji prompt input"
+  />
+));
+
+PromptInput.displayName = 'PromptInput';
 
 export function EmojiForm() {
   const { profile } = useProfile();
   const [prompt, setPrompt] = useState('');
   const { isLoading, setLoading, addEmoji } = useEmojiStore();
+
+  const handlePromptChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    setPrompt(e.target.value);
+  }, []);
   
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!profile) {
-      console.error('No profile found');
+      toast({
+        title: 'Error',
+        description: 'Please sign in to generate emojis',
+        variant: 'destructive',
+      });
       return;
     }
 
     if (profile.credits <= 0) {
-      console.error('No credits remaining');
-      // You might want to show a modal or message to upgrade
+      toast({
+        title: 'No Credits',
+        description: 'Please upgrade your plan to generate more emojis',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    if (!prompt.trim()) {
       return;
     }
 
@@ -32,11 +95,11 @@ export function EmojiForm() {
       const response = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt }),
+        body: JSON.stringify({ prompt: prompt.trim() }),
       });
       
       if (!response.ok) {
-        throw new Error('Generation failed');
+        throw new Error('Failed to generate emoji');
       }
       
       const { output } = await response.json();
@@ -44,39 +107,45 @@ export function EmojiForm() {
       addEmoji({
         id: Date.now().toString(),
         image_url: output,
-        prompt,
+        prompt: prompt.trim(),
         likes_count: 0,
         creator_user_id: profile.user_id,
         created_at: new Date().toISOString(),
         liked: false
       });
+
+      setPrompt('');
+      toast({
+        title: 'Success',
+        description: 'Emoji generated successfully!',
+      });
       
     } catch (error) {
-      console.error('Error:', error);
+      toast({
+        title: 'Error',
+        description: error instanceof Error ? error.message : 'Failed to generate emoji',
+        variant: 'destructive',
+      });
     } finally {
       setLoading(false);
     }
-  };
+  }, [profile, prompt, setLoading, addEmoji]);
+
+  const isSubmitDisabled = !prompt.trim() || isLoading;
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-xl mx-auto">
+    <form 
+      onSubmit={handleSubmit} 
+      className="w-full max-w-xl mx-auto"
+      aria-label="Emoji generation form"
+    >
       <div className="flex gap-2">
-        <Input
-          placeholder="Enter a prompt to generate an emoji"
+        <PromptInput
           value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          className="flex-1"
+          onChange={handlePromptChange}
+          isLoading={isLoading}
         />
-        <Button type="submit" disabled={isLoading || !prompt}>
-          {isLoading ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Generating...
-            </>
-          ) : (
-            'Generate'
-          )}
-        </Button>
+        <SubmitButton isLoading={isLoading} />
       </div>
     </form>
   );
