@@ -20,7 +20,6 @@ import { LoadingSpinner } from '../../components/ui/loading-spinner'
 import ErrorBoundary from '../../components/error-boundary'
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 
-export { runtime } from '@/app/config/runtime';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -150,3 +149,5 @@ export default function Services() {
     </>
   );
 } 
+
+export const runtime = 'edge'; 

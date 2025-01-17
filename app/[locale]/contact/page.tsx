@@ -6,8 +6,6 @@ import { Textarea } from "@/app/components/ui/textarea";
 import { Mail, MessageSquare, Github, X } from "lucide-react";
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 
-export { runtime } from '@/app/config/runtime';
-
 export default function Contact() {
   const { t } = useTranslation();
 
@@ -178,3 +176,5 @@ export default function Contact() {
     </div>
   );
 } 
+
+export const runtime = 'edge'; 

@@ -6,7 +6,6 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 
-export { runtime } from '@/app/config/runtime';
 
 export default function Products() {
   const { t, locale } = useTranslation();
@@ -162,3 +161,5 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     </div>
   );
 }
+
+export const runtime = 'edge'; 

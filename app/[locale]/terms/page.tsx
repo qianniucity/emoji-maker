@@ -3,7 +3,6 @@
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 import { StructuredData } from "@/app/components/structured-data";
 
-export { runtime } from '@/app/config/runtime';
 
 export default function Terms() {
   const { t, locale } = useTranslation();
@@ -79,3 +78,5 @@ export default function Terms() {
     </>
   );
 } 
+
+export const runtime = 'edge'; 
