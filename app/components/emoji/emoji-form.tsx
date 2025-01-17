@@ -7,8 +7,16 @@ import { Loader2 } from 'lucide-react';
 import { useEmojiStore } from '@/app/store/emoji-store';
 import { useProfile } from '@/app/hooks/use-profile';
 import { toast } from '@/app/components/ui/use-toast';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/app/components/ui/dialog";
 import type { FormEvent, ChangeEvent } from 'react';
-
+import { SignInButton } from '@clerk/nextjs';
 // Memoized submit button component
 const SubmitButton = memo(({ isLoading }: { isLoading: boolean }) => (
   <Button 
@@ -59,20 +67,20 @@ export function EmojiForm() {
   const { profile } = useProfile();
   const [prompt, setPrompt] = useState('');
   const { isLoading, setLoading, addEmoji } = useEmojiStore();
+  const [showLoginDialog, setShowLoginDialog] = useState(false);
+
+  
 
   const handlePromptChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setPrompt(e.target.value);
   }, []);
+
   
   const handleSubmit = useCallback(async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!profile) {
-      toast({
-        title: 'Error',
-        description: 'Please sign in to generate emojis',
-        variant: 'destructive',
-      });
+      setShowLoginDialog(true);
       return;
     }
 
@@ -131,21 +139,46 @@ export function EmojiForm() {
     }
   }, [profile, prompt, setLoading, addEmoji]);
 
-
   return (
-    <form 
-      onSubmit={handleSubmit} 
-      className="w-full max-w-xl mx-auto"
-      aria-label="Emoji generation form"
-    >
-      <div className="flex gap-2">
-        <PromptInput
-          value={prompt}
-          onChange={handlePromptChange}
-          isLoading={isLoading}
-        />
-        <SubmitButton isLoading={isLoading} />
-      </div>
-    </form>
+    <>
+      <form 
+        onSubmit={handleSubmit} 
+        className="w-full max-w-xl mx-auto"
+        aria-label="Emoji generation form"
+      >
+        <div className="flex gap-2">
+          <PromptInput
+            value={prompt}
+            onChange={handlePromptChange}
+            isLoading={isLoading}
+          />
+          <SubmitButton isLoading={isLoading} />
+        </div>
+      </form>
+
+      <Dialog open={showLoginDialog} onOpenChange={setShowLoginDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Login Required</DialogTitle>
+            <DialogDescription>
+              Please sign in to generate emojis. It only takes a few seconds!
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex justify-end space-x-2 pt-4">
+            <Button
+              variant="outline"
+              onClick={() => setShowLoginDialog(false)}
+            >
+              Cancel
+            </Button>
+            <SignInButton mode="modal">
+            <Button>
+              Sign In
+            </Button>
+          </SignInButton>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }
