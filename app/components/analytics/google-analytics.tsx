@@ -4,6 +4,18 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
+// Declare gtag as a property on the window object
+declare global {
+  interface Window {
+    gtag: (
+      command: string,
+      target: string,
+      config?: Record<string, unknown>
+    ) => void;
+    dataLayer: unknown[];
+  }
+}
+
 export default function GoogleAnalytics({
   GA_MEASUREMENT_ID,
 }: {
