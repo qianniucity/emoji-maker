@@ -5,6 +5,9 @@ import { EmojiGrid } from "@/app/components/emoji/emoji-grid";
 import { EmojiForm } from "@/app/components/emoji/emoji-form";
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 import { LoadingSpinner } from "@/app/components/ui/loading-spinner";
+import { Preview } from "@/app/components/ui/preview";
+import { AnimatedGradientTextSection } from '@/app/components/ui/animated-gradient-text-section';
+
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -17,12 +20,9 @@ export default function HomePage() {
         aria-labelledby="main-heading"
       >
         <div className="text-center space-y-4">
-          <h1 
-            id="main-heading"
-            className="text-4xl font-bold"
-          >
-            😊 {t('common.title')}
-          </h1>
+          <AnimatedGradientTextSection />
+          <Preview />
+
           <p 
             className="text-lg text-muted-foreground"
             role="doc-subtitle"

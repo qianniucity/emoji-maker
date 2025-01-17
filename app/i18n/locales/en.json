@@ -1,452 +1,454 @@
 {
-  "common": {
-    "title": "Emoji Maker",
-    "description": "Create custom emojis with AI-powered tools"
-  },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "quickLinks": "Quick Links",
-    "products": "Products",
-    "contact": "Contact"
-  },
-  "emoji": {
-    "generate": "Generate Emoji",
-    "download": "Download",
-    "like": "Like",
-    "share": "Share"
-  },
-  "footer": {
-    "stayConnected": "Stay Connected",
-    "newsletter": "Subscribe to our newsletter for updates and exclusive offers",
-    "emailPlaceholder": "Enter your email",
-    "subscribe": "Subscribe",
-    "contact": {
-      "title": "Contact Us",
-      "wechat": "WeChat: brothers_talk",
-      "publicAccount": "Public Account: brother-talks",
-      "email": "Email: king101125s@gmail.com"
+    "common": {
+        "title": "Emoji Maker",
+        "description": "Create your custom emojis with AI technology"
     },
-    "followUs": {
-      "title": "Follow Us",
-      "bilibili": "Follow us on Bilibili",
-      "x": "Follow us on X",
-      "youtube": "Follow us on Youtube",
-      "github": "Connect with us on Github"
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "quickLinks": "Quick Links",
+        "products": "Products",
+        "contact": "Contact"
     },
-    "darkMode": "Toggle dark mode",
-    "copyright": "© 2024 qianniucity. All rights reserved.",
-    "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "cookies": "Cookie Settings"
-    }
-  },
-  "about": {
-    "title": "About Emoji Maker",
-    "greeting": "👋 Hey there!",
-    "intro": "Emoji Maker is a fun project that lets you create custom emojis using AI. Ever wanted an emoji that perfectly captures your mood or idea? Now you can make it happen!",
-    
-    "features": {
-      "title": "✨ What Makes It Cool",
-      "description": "We've combined the power of Stable Diffusion (SDXL) with a specialized emoji model to turn your text descriptions into unique, expressive emojis. Just type what you want, and watch the AI work its magic."
+    "emoji": {
+        "generate": "Generate Emoji",
+        "download": "Download",
+        "like": "Like",
+        "share": "Share"
     },
-    
-    "howItWorks": {
-      "title": "🛠️ How It Works",
-      "steps": {
-        "0": "Type in your emoji idea",
-        "1": "Our AI processes your description",
-        "2": "Get your custom emoji in seconds",
-        "3": "Share it with the community",
-        "4": "Download and use it anywhere"
-      }
-    },
-    
-    "forCreators": {
-      "title": "🎯 Built For Creators",
-      "description": "Whether you're a developer, content creator, or just someone who loves emojis, we've got you covered. Every new user starts with free credits to create their first emojis."
-    },
-    
-    "community": {
-      "title": "🤝 Community First",
-      "description": "This isn't just a tool - it's a community of emoji enthusiasts. Like and share your favorite creations, get inspired by others, and be part of something fun!"
-    },
-    
-    "techStack": {
-      "title": "💻 Tech Stack",
-      "intro": "For the tech-curious folks out there, we built this using:",
-      "items": {
-        "0": "Next.js 14 for the framework",
-        "1": "Replicate AI for emoji generation",
-        "2": "Supabase for the backend",
-        "3": "Clerk for authentication",
-        "4": "Tailwind CSS for styling"
-      }
-    },
-    
-    "getStarted": {
-      "title": "🚀 Get Started",
-      "description": "Ready to create your own custom emojis? Head back to the",
-      "homepageLink": "homepage",
-      "and": "and start creating!"
-    },
-    
-    "contact": {
-      "title": "📬 Contact",
-      "description": "Got questions or suggestions? We'd love to hear from you! Drop us a line at",
-      "email": "king101125s@gmail.com"
-    },
-    
     "footer": {
-      "madeWith": "Made with ❤️ by developers who love emojis"
-    }
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Questions, feedback, or just want to say hi? We'd love to hear from you!",
-    "form": {
-      "title": "Send us a message",
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "email": "Email",
-      "emailPlaceholder": "you@example.com",
-      "subject": "Subject",
-      "subjectPlaceholder": "What's this about?",
-      "message": "Message",
-      "messagePlaceholder": "Tell us what's on your mind...",
-      "send": "Send Message"
-    },
-    "quickContact": {
-      "title": "Quick Contact",
-      "email": "Email",
-      "twitter": "@esx_ai",
-      "github": "github.com/qianniucity/emoji-maker"
-    },
-    "faq": {
-      "title": "Common Questions",
-      "questions": {
-        "credits": {
-          "title": "How do I get more credits?",
-          "answer": "Upgrade to our Pro plan for unlimited emoji generations!"
+        "stayConnected": "Stay Connected",
+        "newsletter": "Subscribe to our newsletter for updates and exclusive offers",
+        "emailPlaceholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "contact": {
+            "title": "Contact Us",
+            "wechat": "WeChat: brothers_talk",
+            "publicAccount": "Public Account: brother-talks",
+            "email": "Email: king101125s@gmail.com"
         },
-        "commercial": {
-          "title": "Can I use emojis commercially?",
-          "answer": "Pro users get full commercial rights to all generated emojis."
+        "followUs": {
+            "title": "Follow Us",
+            "bilibili": "Follow us on Bilibili",
+            "x": "Follow us on X",
+            "youtube": "Follow us on Youtube",
+            "github": "Connect with us on Github"
         },
-        "support": {
-          "title": "Need technical support?",
-          "answer": "Check out our documentation or contact our support team.",
-          "docs": "documentation"
+        "darkMode": "Toggle dark mode",
+        "copyright": "© 2024 qianniucity. All rights reserved.",
+        "legal": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "cookies": "Cookie Settings"
         }
-      }
-    },
-    "responseTime": {
-      "notice": "We typically respond within 24 hours during business days.",
-      "immediate": "For immediate assistance, check out our",
-      "docs": "documentation"
-    }
-  },
-  "products": {
-    "title": "Choose Your Plan",
-    "subtitle": "Find the perfect plan for your emoji creation needs",
-    "plans": {
-      "free": {
-        "tag": "Get Started",
-        "title": "Free",
-        "price": "$0",
-        "period": "/month",
-        "features": {
-          "0": "3 Free Emoji Generations",
-          "1": "Basic Customization",
-          "2": "Community Access",
-          "3": "Standard Export Formats",
-          "4": "Basic Support"
-        },
-        "cta": "Start Free"
-      },
-      "pro": {
-        "tag": "Most Popular",
-        "title": "Pro",
-        "price": "$9",
-        "period": "/month",
-        "features": {
-          "0": "Unlimited Emoji Generations",
-          "1": "Advanced Customization",
-          "2": "Priority Processing",
-          "3": "All Export Formats",
-          "4": "Priority Support"
-        },
-        "cta": "Get Pro"
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "items": {
-        "free": {
-          "question": "What's included in the free plan?",
-          "answer": "The free plan includes 3 emoji generations per month, basic customization options, and access to our community features."
-        },
-        "upgrade": {
-          "question": "How do I upgrade to Pro?",
-          "answer": "You can upgrade to Pro at any time from your account settings. Pro features are instantly activated upon successful payment."
-        },
-        "refund": {
-          "question": "What's your refund policy?",
-          "answer": "We offer a 14-day money-back guarantee for Pro subscriptions. No questions asked."
-        },
-        "commercial": {
-          "question": "Can I use emojis commercially?",
-          "answer": "Yes! Pro plan users get full commercial rights to all generated emojis."
-        }
-      }
-    },
-    "cta": {
-      "title": "Ready to start creating?",
-      "subtitle": "Join thousands of creators already using our platform",
-      "button": "Try for Free"
-    }
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Transform your ideas into expressive emojis with our AI-powered tools",
-    "features": {
-      "aiGeneration": {
-        "title": "AI Emoji Generation",
-        "description": "Turn your ideas into custom emojis in seconds using our cutting-edge AI technology. Perfect for creating unique expressions."
-      },
-      "customization": {
-        "title": "Style Customization",
-        "description": "Choose from various artistic styles, or create your own. Adjust colors, expressions, and details to match your brand."
-      },
-      "sharing": {
-        "title": "Easy Sharing",
-        "description": "Share your creations directly to social media or export them for use in your favorite messaging apps."
-      },
-      "export": {
-        "title": "Batch Export",
-        "description": "Download your emojis in multiple formats and sizes. Perfect for different platforms and use cases."
-      },
-      "priority": {
-        "title": "Priority Processing",
-        "description": "Skip the queue with our Pro plan. Get faster generation times and priority support when you need it most."
-      },
-      "license": {
-        "title": "Commercial License",
-        "description": "Use your generated emojis in commercial projects with our Pro plan. Full rights included."
-      }
-    },
-    "enterprise": {
-      "title": "Enterprise Solutions",
-      "subtitle": "Need a custom solution for your business? We offer enterprise-grade features including:",
-      "features": {
-        "team": {
-          "title": "Team Management",
-          "description": "Manage multiple users, roles, and permissions."
-        },
-        "security": {
-          "title": "Enhanced Security",
-          "description": "Advanced security features and dedicated infrastructure."
-        },
-        "styling": {
-          "title": "Custom Styling",
-          "description": "Brand-specific style presets and guidelines."
-        },
-        "support": {
-          "title": "Dedicated Support",
-          "description": "24/7 priority support and consultation."
-        }
-      },
-      "cta": "Contact Sales"
-    },
-    "finalCta": {
-      "title": "Ready to get started?",
-      "subtitle": "Join thousands of creators and businesses already using our platform",
-      "pricing": "View Pricing",
-      "try": "Try for Free"
-    }
-  },
-  "metadata": {
-    "default": {
-      "title": "Emoji Maker",
-      "description": "Create custom emojis with AI-powered tools"
     },
     "about": {
-      "title": "About Us",
-      "description": "Learn about our mission to revolutionize emoji creation with AI technology"
+        "title": "About Emoji Maker",
+        "greeting": "👋 Hey there!",
+        "intro": "Emoji Maker is a fun project that lets you create custom emojis using AI. Ever wanted an emoji that perfectly captures your mood or idea? Now you can make it happen!",
+        "features": {
+            "title": "✨ What Makes It Cool",
+            "description": "We've combined the power of Stable Diffusion (SDXL) with a specialized emoji model to turn your text descriptions into unique, expressive emojis. Just type what you want, and watch the AI work its magic."
+        },
+        "howItWorks": {
+            "title": "🛠️ How It Works",
+            "steps": {
+                "0": "Type in your emoji idea",
+                "1": "Our AI processes your description",
+                "2": "Get your custom emoji in seconds",
+                "3": "Share it with the community",
+                "4": "Download and use it anywhere"
+            }
+        },
+        "forCreators": {
+            "title": "🎯 Built For Creators",
+            "description": "Whether you're a developer, content creator, or just someone who loves emojis, we've got you covered. Every new user starts with free credits to create their first emojis."
+        },
+        "community": {
+            "title": "🤝 Community First",
+            "description": "This isn't just a tool - it's a community of emoji enthusiasts. Like and share your favorite creations, get inspired by others, and be part of something fun!"
+        },
+        "techStack": {
+            "title": "💻 Tech Stack",
+            "intro": "For the tech-curious folks out there, we built this using:",
+            "items": {
+                "0": "Next.js 14 for the framework",
+                "1": "Replicate AI for emoji generation",
+                "2": "Supabase for the backend",
+                "3": "Clerk for authentication",
+                "4": "Tailwind CSS for styling"
+            }
+        },
+        "getStarted": {
+            "title": "🚀 Get Started",
+            "description": "Ready to create your own custom emojis? Head back to the",
+            "homepageLink": "homepage",
+            "and": "and start creating!"
+        },
+        "contact": {
+            "title": "📬 Contact",
+            "description": "Got questions or suggestions? We'd love to hear from you! Drop us a line at",
+            "email": "king101125s@gmail.com"
+        },
+        "footer": {
+            "madeWith": "Made with ❤️ by developers who love emojis"
+        }
     },
     "contact": {
-      "title": "Contact Us",
-      "description": "Get in touch with our team for support, feedback, or business inquiries"
+        "title": "Get in Touch",
+        "subtitle": "Questions, feedback, or just want to say hi? We'd love to hear from you!",
+        "form": {
+            "title": "Send us a message",
+            "name": "Name",
+            "namePlaceholder": "Your name",
+            "email": "Email",
+            "emailPlaceholder": "you@example.com",
+            "subject": "Subject",
+            "subjectPlaceholder": "What's this about?",
+            "message": "Message",
+            "messagePlaceholder": "Tell us what's on your mind...",
+            "send": "Send Message"
+        },
+        "quickContact": {
+            "title": "Quick Contact",
+            "email": "Email",
+            "twitter": "@esx_ai",
+            "github": "github.com/qianniucity/emoji-maker"
+        },
+        "faq": {
+            "title": "Common Questions",
+            "questions": {
+                "credits": {
+                    "title": "How do I get more credits?",
+                    "answer": "Upgrade to our Pro plan for unlimited emoji generations!"
+                },
+                "commercial": {
+                    "title": "Can I use emojis commercially?",
+                    "answer": "Pro users get full commercial rights to all generated emojis."
+                },
+                "support": {
+                    "title": "Need technical support?",
+                    "answer": "Check out our documentation or contact our support team.",
+                    "docs": "documentation"
+                }
+            }
+        },
+        "responseTime": {
+            "notice": "We typically respond within 24 hours during business days.",
+            "immediate": "For immediate assistance, check out our",
+            "docs": "documentation"
+        }
     },
     "products": {
-      "title": "Pricing & Plans",
-      "description": "Choose the perfect plan for your emoji creation needs"
+        "title": "Choose Your Plan",
+        "subtitle": "Find the perfect plan for your emoji creation needs",
+        "plans": {
+            "free": {
+                "tag": "Get Started",
+                "title": "Free",
+                "price": "$0",
+                "period": "/month",
+                "features": {
+                    "0": "3 Free Emoji Generations",
+                    "1": "Basic Customization",
+                    "2": "Community Access",
+                    "3": "Standard Export Formats",
+                    "4": "Basic Support"
+                },
+                "cta": "Start Free"
+            },
+            "pro": {
+                "tag": "Most Popular",
+                "title": "Pro",
+                "price": "$9",
+                "period": "/month",
+                "features": {
+                    "0": "Unlimited Emoji Generations",
+                    "1": "Advanced Customization",
+                    "2": "Priority Processing",
+                    "3": "All Export Formats",
+                    "4": "Priority Support"
+                },
+                "cta": "Get Pro"
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": {
+                "free": {
+                    "question": "What's included in the free plan?",
+                    "answer": "The free plan includes 3 emoji generations per month, basic customization options, and access to our community features."
+                },
+                "upgrade": {
+                    "question": "How do I upgrade to Pro?",
+                    "answer": "You can upgrade to Pro at any time from your account settings. Pro features are instantly activated upon successful payment."
+                },
+                "refund": {
+                    "question": "What's your refund policy?",
+                    "answer": "We offer a 14-day money-back guarantee for Pro subscriptions. No questions asked."
+                },
+                "commercial": {
+                    "question": "Can I use emojis commercially?",
+                    "answer": "Yes! Pro plan users get full commercial rights to all generated emojis."
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to start creating?",
+            "subtitle": "Join thousands of creators already using our platform",
+            "button": "Try for Free"
+        }
     },
     "services": {
-      "title": "Our Services",
-      "description": "Explore our AI-powered emoji creation services and enterprise solutions"
+        "title": "Our Services",
+        "subtitle": "Transform your ideas into expressive emojis with our AI-powered tools",
+        "features": {
+            "aiGeneration": {
+                "title": "AI Emoji Generation",
+                "description": "Turn your ideas into custom emojis in seconds using our cutting-edge AI technology. Perfect for creating unique expressions."
+            },
+            "customization": {
+                "title": "Style Customization",
+                "description": "Choose from various artistic styles, or create your own. Adjust colors, expressions, and details to match your brand."
+            },
+            "sharing": {
+                "title": "Easy Sharing",
+                "description": "Share your creations directly to social media or export them for use in your favorite messaging apps."
+            },
+            "export": {
+                "title": "Batch Export",
+                "description": "Download your emojis in multiple formats and sizes. Perfect for different platforms and use cases."
+            },
+            "priority": {
+                "title": "Priority Processing",
+                "description": "Skip the queue with our Pro plan. Get faster generation times and priority support when you need it most."
+            },
+            "license": {
+                "title": "Commercial License",
+                "description": "Use your generated emojis in commercial projects with our Pro plan. Full rights included."
+            }
+        },
+        "enterprise": {
+            "title": "Enterprise Solutions",
+            "subtitle": "Need a custom solution for your business? We offer enterprise-grade features including:",
+            "features": {
+                "team": {
+                    "title": "Team Management",
+                    "description": "Manage multiple users, roles, and permissions."
+                },
+                "security": {
+                    "title": "Enhanced Security",
+                    "description": "Advanced security features and dedicated infrastructure."
+                },
+                "styling": {
+                    "title": "Custom Styling",
+                    "description": "Brand-specific style presets and guidelines."
+                },
+                "support": {
+                    "title": "Dedicated Support",
+                    "description": "24/7 priority support and consultation."
+                }
+            },
+            "cta": "Contact Sales"
+        },
+        "finalCta": {
+            "title": "Ready to get started?",
+            "subtitle": "Join thousands of creators and businesses already using our platform",
+            "pricing": "View Pricing",
+            "try": "Try for Free"
+        }
+    },
+    "metadata": {
+        "default": {
+            "title": "Emoji Maker",
+            "description": "Create custom emojis with AI-powered tools"
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Learn about our mission to revolutionize emoji creation with AI technology"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "Get in touch with our team for support, feedback, or business inquiries"
+        },
+        "products": {
+            "title": "Pricing & Plans",
+            "description": "Choose the perfect plan for your emoji creation needs"
+        },
+        "services": {
+            "title": "Our Services",
+            "description": "Explore our AI-powered emoji creation services and enterprise solutions"
+        },
+        "privacy": {
+            "title": "Privacy Policy | Emoji Maker",
+            "description": "Learn how Emoji Maker protects your privacy and handles your data"
+        },
+        "terms": {
+            "title": "Terms of Service | Emoji Maker",
+            "description": "Read our Terms of Service to understand your rights and responsibilities when using Emoji Maker"
+        },
+        "cookies": {
+            "title": "Cookie Policy | Emoji Maker",
+            "description": "Learn about how we use cookies and similar technologies on Emoji Maker"
+        }
     },
     "privacy": {
-      "title": "Privacy Policy | Emoji Maker",
-      "description": "Learn how Emoji Maker protects your privacy and handles your data"
+        "title": "Privacy Policy",
+        "lastUpdated": "Last Updated",
+        "date": "March 15, 2024",
+        "sections": {
+            "introduction": {
+                "title": "Introduction",
+                "content": "At Emoji Maker, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our AI-powered emoji creation service. By using our service, you agree to the collection and use of information in accordance with this policy."
+            },
+            "collection": {
+                "title": "Information We Collect",
+                "content": "We collect the following types of information to provide and improve our service:",
+                "items": {
+                    "0": "Account information (email, name, and profile picture) when you sign up",
+                    "1": "Usage data (emoji creations, interactions, and preferences)",
+                    "2": "Technical information (browser type, device info, and IP address)",
+                    "3": "Payment information when you upgrade to our Pro plan (processed securely through our payment provider)",
+                    "4": "Communications you have with our support team"
+                }
+            },
+            "usage": {
+                "title": "How We Use Your Information",
+                "content": "We use your information for the following purposes:",
+                "items": {
+                    "0": "To provide and maintain our service, including generating AI-powered emojis",
+                    "1": "To improve our service based on how you use it",
+                    "2": "To communicate with you about updates, support, and promotional offers",
+                    "3": "To detect and prevent fraud or abuse of our service"
+                }
+            },
+            "sharing": {
+                "title": "Information Sharing",
+                "content": "We don't sell your personal information. We only share your information with third parties when necessary to provide our service (like with our AI provider Replicate), when required by law, or with your explicit consent."
+            },
+            "security": {
+                "title": "Data Security",
+                "content": "We implement industry-standard security measures to protect your personal information. This includes encryption, secure servers, and regular security audits. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
+            },
+            "cookies": {
+                "title": "Cookies and Tracking",
+                "content": "We use cookies and similar tracking technologies to improve your experience on our site. You can control cookie settings through your browser preferences."
+            },
+            "rights": {
+                "title": "Your Rights",
+                "content": "You have several rights regarding your personal information:",
+                "items": {
+                    "0": "Access and download your personal data",
+                    "1": "Request corrections to your information",
+                    "2": "Delete your account and associated data",
+                    "3": "Opt-out of marketing communications"
+                }
+            },
+            "contact": {
+                "title": "Contact Us",
+                "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@qianniuspace.com."
+            }
+        }
     },
     "terms": {
-      "title": "Terms of Service | Emoji Maker",
-      "description": "Read our Terms of Service to understand your rights and responsibilities when using Emoji Maker"
+        "title": "Terms of Service",
+        "lastUpdated": "Last Updated",
+        "date": "March 15, 2024",
+        "sections": {
+            "acceptance": {
+                "title": "Acceptance of Terms",
+                "content": "By accessing or using Emoji Maker, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our service."
+            },
+            "services": {
+                "title": "Description of Services",
+                "content": "Emoji Maker provides an AI-powered platform for creating custom emojis. We reserve the right to modify, suspend, or discontinue any part of our service at any time."
+            },
+            "accounts": {
+                "title": "User Accounts",
+                "content": "When creating an account, you must:",
+                "items": {
+                    "0": "Provide accurate and complete information",
+                    "1": "Maintain the security of your account credentials",
+                    "2": "Promptly update any changes to your information",
+                    "3": "Accept responsibility for all activities under your account"
+                }
+            },
+            "content": {
+                "title": "User Content",
+                "content": "You retain ownership of your content but grant us license to:",
+                "items": {
+                    "0": "Use, display, and store your content",
+                    "1": "Modify content to provide our services",
+                    "2": "Share content according to your settings",
+                    "3": "Remove content that violates our policies",
+                    "4": "Use content for service improvement"
+                }
+            },
+            "payment": {
+                "title": "Payment Terms",
+                "content": "Pro plan subscriptions are billed in advance on a monthly or annual basis. Refunds are handled according to our refund policy. Free credits and promotional offers may be subject to additional terms."
+            },
+            "termination": {
+                "title": "Account Termination",
+                "content": "We may suspend or terminate accounts that violate our terms, engage in fraudulent activity, or harm our community. You may delete your account at any time."
+            },
+            "disclaimer": {
+                "title": "Disclaimer of Warranties",
+                "content": "Our service is provided 'as is' without warranties of any kind, either express or implied. We do not guarantee uninterrupted or error-free service."
+            },
+            "contact": {
+                "title": "Contact Information",
+                "content": "For questions about these Terms of Service, please contact us at terms@qianniuspace.com."
+            }
+        }
     },
     "cookies": {
-      "title": "Cookie Policy | Emoji Maker",
-      "description": "Learn about how we use cookies and similar technologies on Emoji Maker"
-    }
-  },
-  "privacy": {
-    "title": "Privacy Policy",
-    "lastUpdated": "Last Updated",
-    "date": "March 15, 2024",
-    "sections": {
-      "introduction": {
-        "title": "Introduction",
-        "content": "At Emoji Maker, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our AI-powered emoji creation service. By using our service, you agree to the collection and use of information in accordance with this policy."
-      },
-      "collection": {
-        "title": "Information We Collect",
-        "content": "We collect the following types of information to provide and improve our service:",
-        "items": {
-          "0": "Account information (email, name, and profile picture) when you sign up",
-          "1": "Usage data (emoji creations, interactions, and preferences)",
-          "2": "Technical information (browser type, device info, and IP address)",
-          "3": "Payment information when you upgrade to our Pro plan (processed securely through our payment provider)",
-          "4": "Communications you have with our support team"
+        "title": "Cookie Policy",
+        "lastUpdated": "Last Updated",
+        "date": "March 15, 2024",
+        "sections": {
+            "introduction": {
+                "title": "Introduction",
+                "content": "This Cookie Policy explains how Emoji Maker uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them."
+            },
+            "what": {
+                "title": "What Are Cookies",
+                "content": "Cookies are small data files placed on your device when you visit a website. They are widely used to make websites work more efficiently and provide reporting information."
+            },
+            "types": {
+                "title": "Types of Cookies We Use",
+                "content": "We use the following types of cookies:",
+                "items": {
+                    "0": "Essential cookies: Required for basic site functionality",
+                    "1": "Performance cookies: Help us understand how visitors use our site",
+                    "2": "Functionality cookies: Remember your preferences",
+                    "3": "Targeting cookies: Help make our advertising more relevant"
+                }
+            },
+            "control": {
+                "title": "Your Cookie Controls",
+                "content": "Most browsers allow you to control cookies through their settings. However, if you limit the ability of websites to set cookies, you may impact your overall user experience."
+            },
+            "contact": {
+                "title": "Questions?",
+                "content": "If you have any questions about our use of cookies, please contact us at privacy@qianniuspace.com."
+            }
+        },
+        "consent": {
+            "message": "We use cookies to improve your experience and analyze site traffic. By continuing to use our site, you agree to our cookie policy.",
+            "accept": "Accept",
+            "decline": "Decline"
         }
-      },
-      "usage": {
-        "title": "How We Use Your Information",
-        "content": "We use your information for the following purposes:",
-        "items": {
-          "0": "To provide and maintain our service, including generating AI-powered emojis",
-          "1": "To improve our service based on how you use it",
-          "2": "To communicate with you about updates, support, and promotional offers",
-          "3": "To detect and prevent fraud or abuse of our service"
-        }
-      },
-      "sharing": {
-        "title": "Information Sharing",
-        "content": "We don't sell your personal information. We only share your information with third parties when necessary to provide our service (like with our AI provider Replicate), when required by law, or with your explicit consent."
-      },
-      "security": {
-        "title": "Data Security",
-        "content": "We implement industry-standard security measures to protect your personal information. This includes encryption, secure servers, and regular security audits. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
-      },
-      "cookies": {
-        "title": "Cookies and Tracking",
-        "content": "We use cookies and similar tracking technologies to improve your experience on our site. You can control cookie settings through your browser preferences."
-      },
-      "rights": {
-        "title": "Your Rights",
-        "content": "You have several rights regarding your personal information:",
-        "items": {
-          "0": "Access and download your personal data",
-          "1": "Request corrections to your information",
-          "2": "Delete your account and associated data",
-          "3": "Opt-out of marketing communications"
-        }
-      },
-      "contact": {
-        "title": "Contact Us",
-        "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@qianniuspace.com."
-      }
-    }
-  },
-  "terms": {
-    "title": "Terms of Service",
-    "lastUpdated": "Last Updated",
-    "date": "March 15, 2024",
-    "sections": {
-      "acceptance": {
-        "title": "Acceptance of Terms",
-        "content": "By accessing or using Emoji Maker, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our service."
-      },
-      "services": {
-        "title": "Description of Services",
-        "content": "Emoji Maker provides an AI-powered platform for creating custom emojis. We reserve the right to modify, suspend, or discontinue any part of our service at any time."
-      },
-      "accounts": {
-        "title": "User Accounts",
-        "content": "When creating an account, you must:",
-        "items": {
-          "0": "Provide accurate and complete information",
-          "1": "Maintain the security of your account credentials",
-          "2": "Promptly update any changes to your information",
-          "3": "Accept responsibility for all activities under your account"
-        }
-      },
-      "content": {
-        "title": "User Content",
-        "content": "You retain ownership of your content but grant us license to:",
-        "items": {
-          "0": "Use, display, and store your content",
-          "1": "Modify content to provide our services",
-          "2": "Share content according to your settings",
-          "3": "Remove content that violates our policies",
-          "4": "Use content for service improvement"
-        }
-      },
-      "payment": {
-        "title": "Payment Terms",
-        "content": "Pro plan subscriptions are billed in advance on a monthly or annual basis. Refunds are handled according to our refund policy. Free credits and promotional offers may be subject to additional terms."
-      },
-      "termination": {
-        "title": "Account Termination",
-        "content": "We may suspend or terminate accounts that violate our terms, engage in fraudulent activity, or harm our community. You may delete your account at any time."
-      },
-      "disclaimer": {
-        "title": "Disclaimer of Warranties",
-        "content": "Our service is provided 'as is' without warranties of any kind, either express or implied. We do not guarantee uninterrupted or error-free service."
-      },
-      "contact": {
-        "title": "Contact Information",
-        "content": "For questions about these Terms of Service, please contact us at terms@qianniuspace.com."
-      }
-    }
-  },
-  "cookies": {
-    "title": "Cookie Policy",
-    "lastUpdated": "Last Updated",
-    "date": "March 15, 2024",
-    "sections": {
-      "introduction": {
-        "title": "Introduction",
-        "content": "This Cookie Policy explains how Emoji Maker uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them."
-      },
-      "what": {
-        "title": "What Are Cookies",
-        "content": "Cookies are small data files placed on your device when you visit a website. They are widely used to make websites work more efficiently and provide reporting information."
-      },
-      "types": {
-        "title": "Types of Cookies We Use",
-        "content": "We use the following types of cookies:",
-        "items": {
-          "0": "Essential cookies: Required for basic site functionality",
-          "1": "Performance cookies: Help us understand how visitors use our site",
-          "2": "Functionality cookies: Remember your preferences",
-          "3": "Targeting cookies: Help make our advertising more relevant"
-        }
-      },
-      "control": {
-        "title": "Your Cookie Controls",
-        "content": "Most browsers allow you to control cookies through their settings. However, if you limit the ability of websites to set cookies, you may impact your overall user experience."
-      },
-      "contact": {
-        "title": "Questions?",
-        "content": "If you have any questions about our use of cookies, please contact us at privacy@qianniuspace.com."
-      }
     },
-    "consent": {
-      "message": "We use cookies to improve your experience and analyze site traffic. By continuing to use our site, you agree to our cookie policy.",
-      "accept": "Accept",
-      "decline": "Decline"
+    "preview": {
+        "prefix": "Let's ",
+        "typewriter": {
+            "create": "create fun emojis",
+            "customize": "customize unique emojis",
+            "express": "express unique ideas",
+            "share": "share joyful moments",
+            "inspire": "inspire with AI"
+        }
     }
-  }
 }

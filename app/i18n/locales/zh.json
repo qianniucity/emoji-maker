@@ -1,452 +1,454 @@
 {
-  "common": {
-    "title": "表情制作器",
-    "description": "使用 AI 驱动的工具创建自定义表情"
-  },
-  "nav": {
-    "home": "首页",
-    "about": "关于",
-    "services": "服务",
-    "quickLinks": "快速链接",
-    "products": "产品",
-    "contact": "联系我们"
-  },
-  "emoji": {
-    "generate": "生成表情",
-    "download": "下载",
-    "like": "点赞",
-    "share": "分享"
-  },
-  "footer": {
-    "stayConnected": "保持联系",
-    "newsletter": "订阅我们的新闻通讯，获取最新更新和独家优惠",
-    "emailPlaceholder": "输入您的邮箱",
-    "subscribe": "订阅",
-    "contact": {
-      "title": "联系我们",
-      "wechat": "联系 WeChat：brothers_talk",
-      "publicAccount": "公众号：brother-talks",
-      "email": "Email: king101125s@gmail.com"
+    "common": {
+        "title": "Emoji 制作器",
+        "description": "使用 AI 技术，轻松创建你的专属表情"
     },
-    "followUs": {
-      "title": "关注我们",
-      "bilibili": "在 Bilibili 关注我们",
-      "x": "在 X 关注我们",
-      "youtube": "在 Youtube 关注我们",
-      "github": "在 Github 关注我们"
+    "nav": {
+        "home": "首页",
+        "about": "关于",
+        "services": "服务",
+        "quickLinks": "快速链接",
+        "products": "产品",
+        "contact": "联系我们"
     },
-    "darkMode": "切换深色模式",
-    "copyright": "© 2024 qianniucity. 保留所有权利。",
-    "legal": {
-      "privacy": "隐私政策",
-      "terms": "服务条款",
-      "cookies": "Cookie 设置"
-    }
-  },
-  "about": {
-    "title": "关于表情制作器",
-    "greeting": "👋 你好！",
-    "intro": "表情制作器是一个有趣的项目，让你使用 AI 创建自定义表情。想要一个完美表达你心情或想法的表情吗？现在就可以实现！",
-    
-    "features": {
-      "title": "✨ 特色功能",
-      "description": "我们将 Stable Diffusion (SDXL) 的强大功能与专门的表情模型相结合，将你的文字描述转化为独特、富有表现力的表情。只需输入你想要的内容，看着 AI 施展魔法。"
+    "emoji": {
+        "generate": "生成表情",
+        "download": "下载",
+        "like": "点赞",
+        "share": "分享"
     },
-    
-    "howItWorks": {
-      "title": "🛠️ 工作原理",
-      "steps": {
-        "0": "输入你的表情创意",
-        "1": "我们的 AI 处理你的描述",
-        "2": "几秒钟内获得自定义表情",
-        "3": "与社区分享",
-        "4": "下载并在任何地方使用"
-      }
-    },
-    
-    "forCreators": {
-      "title": "🎯 为创作者打造",
-      "description": "无论你是开发者、内容创作者，还是单纯热爱表情的用户，我们都能满足你的需求。每个新用户都可以获得免费积分来创建他们的第一个表情。"
-    },
-    
-    "community": {
-      "title": "🤝 社区至上",
-      "description": "这不仅仅是一个工具 - 这是一个表情爱好者的社区。点赞并分享你喜欢的作品，从他人那里获得灵感，成为有趣社区的一部分！"
-    },
-    
-    "techStack": {
-      "title": "💻 技术栈",
-      "intro": "对技术感兴趣的朋友们，我们使用了以下技术：",
-      "items": {
-        "0": "Next.js 14 作为框架",
-        "1": "Replicate AI 用于表情生成",
-        "2": "Supabase 作为后端",
-        "3": "Clerk 用于身份认证",
-        "4": "Tailwind CSS 用于样式设计"
-      }
-    },
-    
-    "getStarted": {
-      "title": "🚀 开始使用",
-      "description": "准备好创建你自己的表情了吗？返回",
-      "homepageLink": "首页",
-      "and": "开始创作吧！"
-    },
-    
-    "contact": {
-      "title": "📬 联系我们",
-      "description": "有问题或建议？我们很乐意听取你的意见！给我们发送邮件：",
-      "email": "king101125s@gmail.com"
-    },
-    
     "footer": {
-      "madeWith": "由热爱表情的开发者用 ❤️ 制作"
-    }
-  },
-  "contact": {
-    "title": "联系我们",
-    "subtitle": "有问题、反馈或只是想打个招呼？我们很乐意听到您的声音！",
-    "form": {
-      "title": "发送消息",
-      "name": "姓名",
-      "namePlaceholder": "您的姓名",
-      "email": "邮箱",
-      "emailPlaceholder": "you@example.com",
-      "subject": "主题",
-      "subjectPlaceholder": "关于什么？",
-      "message": "消息",
-      "messagePlaceholder": "告诉我们您的想法...",
-      "send": "发送消息"
-    },
-    "quickContact": {
-      "title": "快速联系",
-      "email": "邮箱",
-      "twitter": "@二师兄",
-      "github": "github.com/qianniucity/emoji-maker"
-    },
-    "faq": {
-      "title": "常见问题",
-      "questions": {
-        "credits": {
-          "title": "如何获得更多积分？",
-          "answer": "升级到我们的专业版可获得无限表情生成！"
+        "stayConnected": "保持联系",
+        "newsletter": "订阅我们的新闻通讯，获取最新更新和独家优惠",
+        "emailPlaceholder": "输入您的邮箱",
+        "subscribe": "订阅",
+        "contact": {
+            "title": "联系我们",
+            "wechat": "联系 WeChat：brothers_talk",
+            "publicAccount": "公众号：brother-talks",
+            "email": "Email: king101125s@gmail.com"
         },
-        "commercial": {
-          "title": "可以商用表情吗？",
-          "answer": "专业版用户可以获得所有生成表情的完整商业使用权。"
+        "followUs": {
+            "title": "关注我们",
+            "bilibili": "在 Bilibili 关注我们",
+            "x": "在 X 关注我们",
+            "youtube": "在 Youtube 关注我们",
+            "github": "在 Github 关注我们"
         },
-        "support": {
-          "title": "需要技术支持？",
-          "answer": "查看我们的文档或联系支持团队。",
-          "docs": "文档"
+        "darkMode": "切换深色模式",
+        "copyright": "© 2024 qianniucity. 保留所有权利。",
+        "legal": {
+            "privacy": "隐私政策",
+            "terms": "服务条款",
+            "cookies": "Cookie 设置"
         }
-      }
-    },
-    "responseTime": {
-      "notice": "我们通常在工作日24小时内回复。",
-      "immediate": "如需即时帮助，请查看我们的",
-      "docs": "文档"
-    }
-  },
-  "products": {
-    "title": "选择您的方案",
-    "subtitle": "通过我们灵活的定价选项释放您的创意潜能",
-    "plans": {
-      "free": {
-        "title": "免费版",
-        "price": "¥0",
-        "period": "/月",
-        "tag": "入门",
-        "features": {
-          "0": "3次免费表情生成",
-          "1": "基础表情定制",
-          "2": "社区访问",
-          "3": "标准导出格式",
-          "4": "基础支持"
-        },
-        "cta": "开始使用"
-      },
-      "pro": {
-        "title": "专业版",
-        "price": "¥59",
-        "period": "/月",
-        "tag": "最受欢迎",
-        "features": {
-          "0": "无限表情生成",
-          "1": "高级表情定制",
-          "2": "优先处理",
-          "3": "所有导出格式",
-          "4": "优先支持"
-        },
-        "cta": "升级到专业版"
-      }
-    },
-    "faq": {
-      "title": "常见问题",
-      "items": {
-        "free": {
-          "question": "免费版包含什么？",
-          "answer": "免费版包含3次表情生成、基础定制选项和社区功能访问。非常适合试用我们的服务！"
-        },
-        "upgrade": {
-          "question": "可以随时升级或降级吗？",
-          "answer": "是的！您可以随时升级到专业版获取更多功能，或在计费周期结束时降级回免费版。"
-        },
-        "refund": {
-          "question": "提供退款吗？",
-          "answer": "我们为专业版提供7天退款保证。如果您不满意，只需告诉我们，我们将处理您的退款。"
-        },
-        "commercial": {
-          "question": "可以商用表情吗？",
-          "answer": "专业版订阅者可以获得所有生成表情的完整商业使用权。免费版用户只能将表情用于个人项目。"
-        }
-      }
-    },
-    "cta": {
-      "title": "准备开始创作了吗？",
-      "subtitle": "加入已经在制作精彩表情的数千名创作者",
-      "button": "立即开始创作"
-    }
-  },
-  "services": {
-    "title": "我们的服务",
-    "subtitle": "使用我们的AI驱动工具将您的想法转化为富有表现力的表情",
-    "features": {
-      "aiGeneration": {
-        "title": "AI表情生成",
-        "description": "使用我们的前沿AI技术，几秒钟内将您的想法转化为自定义表情。完美适合创建独特的表达方式。"
-      },
-      "customization": {
-        "title": "风格定制",
-        "description": "从各种艺术风格中选择，或创建您自己的风格。调整颜色、表情和细节以匹配您的品牌。"
-      },
-      "sharing": {
-        "title": "轻松分享",
-        "description": "直接分享您的创作到社交媒体或导出它们以在您喜欢的消息应用中使用。"
-      },
-      "export": {
-        "title": "批量导出",
-        "description": "以多种格式和尺寸下载您的表情。完美适配不同平台和使用场景。"
-      },
-      "priority": {
-        "title": "优先处理",
-        "description": "使用专业版跳过队列。在您最需要时获得更快的生成速度和优先支持。"
-      },
-      "license": {
-        "title": "商业许可",
-        "description": "使用专业版在商业项目中使用生成的表情。包含完整权利。"
-      }
-    },
-    "enterprise": {
-      "title": "企业解决方案",
-      "subtitle": "需要为您的企业定制解决方案？我们提供企业级功能，包括：",
-      "features": {
-        "team": {
-          "title": "团队管理",
-          "description": "管理多个用户、角色和权限。"
-        },
-        "security": {
-          "title": "增强安全",
-          "description": "高级安全功能和专用基础设施。"
-        },
-        "styling": {
-          "title": "自定义风格",
-          "description": "品牌特定的风格预设和指南。"
-        },
-        "support": {
-          "title": "专属支持",
-          "description": "24/7优先支持和咨询。"
-        }
-      },
-      "cta": "联系销售"
-    },
-    "finalCta": {
-      "title": "准备开始了吗？",
-      "subtitle": "加入已经使用我们平台的数千名创作者和企业",
-      "pricing": "查看价格",
-      "try": "免费试用"
-    }
-  },
-  "metadata": {
-    "default": {
-      "title": "Emoji 制作器",
-      "description": "使用 AI 驱动的工具创建自定义表情"
     },
     "about": {
-      "title": "关于我们",
-      "description": "了解我们如何用 AI 技术革新表情创作"
+        "title": "关于表情制作器",
+        "greeting": "👋 你好！",
+        "intro": "表情制作器是一个有趣的项目，让你使用 AI 创建自定义表情。想要一个完美表达你心情或想法的表情吗？现在就可以实现！",
+        "features": {
+            "title": "✨ 特色功能",
+            "description": "我们将 Stable Diffusion (SDXL) 的强大功能与专门的表情模型相结合，将你的文字描述转化为独特、富有表现力的表情。只需输入你想要的内容，看着 AI 施展魔法。"
+        },
+        "howItWorks": {
+            "title": "🛠️ 工作原理",
+            "steps": {
+                "0": "输入你的表情创意",
+                "1": "我们的 AI 处理你的描述",
+                "2": "几秒钟内获得自定义表情",
+                "3": "与社区分享",
+                "4": "下载并在任何地方使用"
+            }
+        },
+        "forCreators": {
+            "title": "🎯 为创作者打造",
+            "description": "无论你是开发者、内容创作者，还是单纯热爱表情的用户，我们都能满足你的需求。每个新用户都可以获得免费积分来创建他们的第一个表情。"
+        },
+        "community": {
+            "title": "🤝 社区至上",
+            "description": "这不仅仅是一个工具 - 这是一个表情爱好者的社区。点赞并分享你喜欢的作品，从他人那里获得灵感，成为有趣社区的一部分！"
+        },
+        "techStack": {
+            "title": "💻 技术栈",
+            "intro": "对技术感兴趣的朋友们，我们使用了以下技术：",
+            "items": {
+                "0": "Next.js 14 作为框架",
+                "1": "Replicate AI 用于表情生成",
+                "2": "Supabase 作为后端",
+                "3": "Clerk 用于身份认证",
+                "4": "Tailwind CSS 用于样式设计"
+            }
+        },
+        "getStarted": {
+            "title": "🚀 开始使用",
+            "description": "准备好创建你自己的表情了吗？返回",
+            "homepageLink": "首页",
+            "and": "开始创作吧！"
+        },
+        "contact": {
+            "title": "📬 联系我们",
+            "description": "有问题或建议？我们很乐意听取你的意见！给我们发送邮件：",
+            "email": "king101125s@gmail.com"
+        },
+        "footer": {
+            "madeWith": "由热爱表情的开发者用 ❤️ 制作"
+        }
     },
     "contact": {
-      "title": "联系我们",
-      "description": "联系我们的团队获取支持、反馈或商务合作"
+        "title": "联系我们",
+        "subtitle": "有问题、反馈或只是想打个招呼？我们很乐意听到您的声音！",
+        "form": {
+            "title": "发送消息",
+            "name": "姓名",
+            "namePlaceholder": "您的姓名",
+            "email": "邮箱",
+            "emailPlaceholder": "you@example.com",
+            "subject": "主题",
+            "subjectPlaceholder": "关于什么？",
+            "message": "消息",
+            "messagePlaceholder": "告诉我们您的想法...",
+            "send": "发送消息"
+        },
+        "quickContact": {
+            "title": "快速联系",
+            "email": "邮箱",
+            "twitter": "@二师兄",
+            "github": "github.com/qianniucity/emoji-maker"
+        },
+        "faq": {
+            "title": "常见问题",
+            "questions": {
+                "credits": {
+                    "title": "如何获得更多积分？",
+                    "answer": "升级到我们的专业版可获得无限表情生成！"
+                },
+                "commercial": {
+                    "title": "可以商用表情吗？",
+                    "answer": "专业版用户可以获得所有生成表情的完整商业使用权。"
+                },
+                "support": {
+                    "title": "需要技术支持？",
+                    "answer": "查看我们的文档或联系支持团队。",
+                    "docs": "文档"
+                }
+            }
+        },
+        "responseTime": {
+            "notice": "我们通常在工作日24小时内回复。",
+            "immediate": "如需即时帮助，请查看我们的",
+            "docs": "文档"
+        }
     },
     "products": {
-      "title": "价格方案",
-      "description": "选择最适合您的表情创作方案"
+        "title": "选择您的方案",
+        "subtitle": "通过我们灵活的定价选项释放您的创意潜能",
+        "plans": {
+            "free": {
+                "title": "免费版",
+                "price": "¥0",
+                "period": "/月",
+                "tag": "入门",
+                "features": {
+                    "0": "3次免费表情生成",
+                    "1": "基础表情定制",
+                    "2": "社区访问",
+                    "3": "标准导出格式",
+                    "4": "基础支持"
+                },
+                "cta": "开始使用"
+            },
+            "pro": {
+                "title": "专业版",
+                "price": "¥59",
+                "period": "/月",
+                "tag": "最受欢迎",
+                "features": {
+                    "0": "无限表情生成",
+                    "1": "高级表情定制",
+                    "2": "优先处理",
+                    "3": "所有导出格式",
+                    "4": "优先支持"
+                },
+                "cta": "升级到专业版"
+            }
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": {
+                "free": {
+                    "question": "免费版包含什么？",
+                    "answer": "免费版包含3次表情生成、基础定制选项和社区功能访问。非常适合试用我们的服务！"
+                },
+                "upgrade": {
+                    "question": "可以随时升级或降级吗？",
+                    "answer": "是的！您可以随时升级到专业版获取更多功能，或在计费周期结束时降级回免费版。"
+                },
+                "refund": {
+                    "question": "提供退款吗？",
+                    "answer": "我们为专业版提供7天退款保证。如果您不满意，只需告诉我们，我们将处理您的退款。"
+                },
+                "commercial": {
+                    "question": "可以商用表情吗？",
+                    "answer": "专业版订阅者可以获得所有生成表情的完整商业使用权。免费版用户只能将表情用于个人项目。"
+                }
+            }
+        },
+        "cta": {
+            "title": "准备开始创作了吗？",
+            "subtitle": "加入已经在制作精彩表情的数千名创作者",
+            "button": "立即开始创作"
+        }
     },
     "services": {
-      "title": "我们的服务",
-      "description": "探索我们的 AI 驱动的表情创作服务和企业解决方案"
+        "title": "我们的服务",
+        "subtitle": "使用我们的AI驱动工具将您的想法转化为富有表现力的表情",
+        "features": {
+            "aiGeneration": {
+                "title": "AI表情生成",
+                "description": "使用我们的前沿AI技术，几秒钟内将您的想法转化为自定义表情。完美适合创建独特的表达方式。"
+            },
+            "customization": {
+                "title": "风格定制",
+                "description": "从各种艺术风格中选择，或创建您自己的风格。调整颜色、表情和细节以匹配您的品牌。"
+            },
+            "sharing": {
+                "title": "轻松分享",
+                "description": "直接分享您的创作到社交媒体或导出它们以在您喜欢的消息应用中使用。"
+            },
+            "export": {
+                "title": "批量导出",
+                "description": "以多种格式和尺寸下载您的表情。完美适配不同平台和使用场景。"
+            },
+            "priority": {
+                "title": "优先处理",
+                "description": "使用专业版跳过队列。在您最需要时获得更快的生成速度和优先支持。"
+            },
+            "license": {
+                "title": "商业许可",
+                "description": "使用专业版在商业项目中使用生成的表情。包含完整权利。"
+            }
+        },
+        "enterprise": {
+            "title": "企业解决方案",
+            "subtitle": "需要为您的企业定制解决方案？我们提供企业级功能，包括：",
+            "features": {
+                "team": {
+                    "title": "团队管理",
+                    "description": "管理多个用户、角色和权限。"
+                },
+                "security": {
+                    "title": "增强安全",
+                    "description": "高级安全功能和专用基础设施。"
+                },
+                "styling": {
+                    "title": "自定义风格",
+                    "description": "品牌特定的风格预设和指南。"
+                },
+                "support": {
+                    "title": "专属支持",
+                    "description": "24/7优先支持和咨询。"
+                }
+            },
+            "cta": "联系销售"
+        },
+        "finalCta": {
+            "title": "准备开始了吗？",
+            "subtitle": "加入已经使用我们平台的数千名创作者和企业",
+            "pricing": "查看价格",
+            "try": "免费试用"
+        }
+    },
+    "metadata": {
+        "default": {
+            "title": "Emoji 制作器",
+            "description": "使用 AI 技术，轻松创建你的专属表情"
+        },
+        "about": {
+            "title": "关于我们",
+            "description": "了解我们如何用 AI 技术革新表情创作"
+        },
+        "contact": {
+            "title": "联系我们",
+            "description": "联系我们的团队获取支持、反馈或商务合作"
+        },
+        "products": {
+            "title": "价格方案",
+            "description": "选择最适合您的表情创作方案"
+        },
+        "services": {
+            "title": "我们的服务",
+            "description": "探索我们的 AI 驱动的表情创作服务和企业解决方案"
+        },
+        "privacy": {
+            "title": "隐私政策 | Emoji 制作器",
+            "description": "了解 Emoji 制作器如何保护您的隐私和处理您的数据"
+        },
+        "terms": {
+            "title": "服务条款 | Emoji 制作器",
+            "description": "阅读我们的服务条款，了解使用 Emoji 制作器时的权利和责任"
+        },
+        "cookies": {
+            "title": "Cookie 政策 | Emoji 制作器",
+            "description": "了解我们如何在 Emoji 制作器中使用 Cookie 和类似技术"
+        }
     },
     "privacy": {
-      "title": "隐私政策 | Emoji 制作器",
-      "description": "了解 Emoji 制作器如何保护您的隐私和处理您的数据"
+        "title": "隐私政策",
+        "lastUpdated": "最后更新时间",
+        "date": "2024年3月15日",
+        "sections": {
+            "introduction": {
+                "title": "简介",
+                "content": "在 Emoji 制作器，我们非常重视您的隐私。本隐私政策说明了我们在提供 AI 驱动的表情制作服务时如何收集、使用和保护您的个人信息。使用我们的服务即表示您同意按照本政策收集和使用信息。"
+            },
+            "collection": {
+                "title": "我们收集的信息",
+                "content": "为了提供和改进我们的服务，我们收集以下类型的信息：",
+                "items": {
+                    "0": "注册时的账户信息（电子邮件、姓名和头像）",
+                    "1": "使用数据（表情创作、互动和偏好）",
+                    "2": "技术信息（浏览器类型、设备信息和IP地址）",
+                    "3": "升级到专业版时的支付信息（通过我们的支付提供商安全处理）",
+                    "4": "与我们支持团队的通信内容"
+                }
+            },
+            "usage": {
+                "title": "我们如何使用您的信息",
+                "content": "我们将您的信息用于以下目的：",
+                "items": {
+                    "0": "提供和维护我们的服务，包括生成 AI 驱动的表情",
+                    "1": "根据您的使用情况改进我们的服务",
+                    "2": "就更新、支持和促销优惠与您沟通",
+                    "3": "检测和防止欺诈或滥用我们的服务"
+                }
+            },
+            "sharing": {
+                "title": "信息共享",
+                "content": "我们不会出售您的个人信息。我们仅在必要时与第三方共享您的信息（如与我们的 AI 提供商 Replicate），或在法律要求或得到您明确同意的情况下共享。"
+            },
+            "security": {
+                "title": "数据安全",
+                "content": "我们采用行业标准的安全措施来保护您的个人信息。这包括加密、安全服务器和定期安全审计。但是，通过互联网传输的方法并非100%安全，我们不能保证绝对的安全性。"
+            },
+            "cookies": {
+                "title": "Cookie 和跟踪",
+                "content": "我们使用 cookie 和类似的跟踪技术来改善您在我们网站上的体验。您可以通过浏览器首选项控制 cookie 设置。"
+            },
+            "rights": {
+                "title": "您的权利",
+                "content": "关于您的个人信息，您享有以下权利：",
+                "items": {
+                    "0": "访问和下载您的个人数据",
+                    "1": "请求更正您的信息",
+                    "2": "删除您的账户和相关数据",
+                    "3": "选择退出营销通信"
+                }
+            },
+            "contact": {
+                "title": "联系我们",
+                "content": "如果您对本隐私政策或我们的数据实践有任何疑问，请通过 privacy@qianniuspace.com 与我们联系。"
+            }
+        }
     },
     "terms": {
-      "title": "服务条款 | Emoji 制作器",
-      "description": "阅读我们的服务条款，了解使用 Emoji 制作器时的权利和责任"
+        "title": "服务条款",
+        "lastUpdated": "最后更新时间",
+        "date": "2024年3月15日",
+        "sections": {
+            "acceptance": {
+                "title": "条款接受",
+                "content": "访问或使用 Emoji 制作器，即表示您同意接受这些服务条款的约束。如果您不同意这些条款的任何部分，请勿使用我们的服务。"
+            },
+            "services": {
+                "title": "服务说明",
+                "content": "Emoji 制作器提供 AI 驱动的自定义表情制作平台。我们保留随时修改、暂停或终止服务任何部分的权利。"
+            },
+            "accounts": {
+                "title": "用户账户",
+                "content": "创建账户时，您必须：",
+                "items": {
+                    "0": "提供准确完整的信息",
+                    "1": "维护账户凭证的安全",
+                    "2": "及时更新您的信息变更",
+                    "3": "对账户下的所有活动负责"
+                }
+            },
+            "content": {
+                "title": "用户内容",
+                "content": "您保留对您内容的所有权，但授予我们以下许可：",
+                "items": {
+                    "0": "使用、展示和存储您的内容",
+                    "1": "修改内容以提供服务",
+                    "2": "根据您的设置分享内容",
+                    "3": "删除违反我们政策的内容",
+                    "4": "使用内容改进服务"
+                }
+            },
+            "payment": {
+                "title": "支付条款",
+                "content": "专业版订阅按月或按年提前收费。退款按照我们的退款政策处理。免费积分和促销优惠可能受额外条款约束。"
+            },
+            "termination": {
+                "title": "账户终止",
+                "content": "对于违反我们条款、从事欺诈活动或损害我们社区的账户，我们可能会暂停或终止其使用。您可以随时删除您的账户。"
+            },
+            "disclaimer": {
+                "title": "免责声明",
+                "content": "我们的服务按 '现状' 提供，不提供任何明示或暗示的保证。我们不保证服务不会中断或无错误。"
+            },
+            "contact": {
+                "title": "联系信息",
+                "content": "如果您对这些服务条款有任何疑问，请通过 terms@qianniuspace.com 与我们联系。"
+            }
+        }
     },
     "cookies": {
-      "title": "Cookie 政策 | Emoji 制作器",
-      "description": "了解我们如何在 Emoji 制作器中使用 Cookie 和类似技术"
-    }
-  },
-  "privacy": {
-    "title": "隐私政策",
-    "lastUpdated": "最后更新时间",
-    "date": "2024年3月15日",
-    "sections": {
-      "introduction": {
-        "title": "简介",
-        "content": "在 Emoji 制作器，我们非常重视您的隐私。本隐私政策说明了我们在提供 AI 驱动的表情制作服务时如何收集、使用和保护您的个人信息。使用我们的服务即表示您同意按照本政策收集和使用信息。"
-      },
-      "collection": {
-        "title": "我们收集的信息",
-        "content": "为了提供和改进我们的服务，我们收集以下类型的信息：",
-        "items": {
-          "0": "注册时的账户信息（电子邮件、姓名和头像）",
-          "1": "使用数据（表情创作、互动和偏好）",
-          "2": "技术信息（浏览器类型、设备信息和IP地址）",
-          "3": "升级到专业版时的支付信息（通过我们的支付提供商安全处理）",
-          "4": "与我们支持团队的通信内容"
+        "title": "Cookie 政策",
+        "lastUpdated": "最后更新时间",
+        "date": "2024年3月15日",
+        "sections": {
+            "introduction": {
+                "title": "简介",
+                "content": "本 Cookie 政策说明了 Emoji 制作器如何使用 cookie 和类似技术在您访问我们的网站时识别您。它解释了这些技术是什么、我们为什么使用它们，以及您控制我们使用它们的权利。"
+            },
+            "what": {
+                "title": "什么是 Cookie",
+                "content": "Cookie 是在您访问网站时放置在您设备上的小型数据文件。它们被广泛用于使网站更高效地运行并提供报告信息。"
+            },
+            "types": {
+                "title": "我们使用的 Cookie 类型",
+                "content": "我们使用以下类型的 Cookie：",
+                "items": {
+                    "0": "必要 Cookie：网站基本功能所需",
+                    "1": "性能 Cookie：帮助我们了解访问者如何使用我们的网站",
+                    "2": "功能 Cookie：记住您的偏好设置",
+                    "3": "定向 Cookie：帮助使我们的广告更相关"
+                }
+            },
+            "control": {
+                "title": "您的 Cookie 控制",
+                "content": "大多数浏览器允许您通过其设置控制 cookie。但是，如果您限制网站设置 cookie 的能力，可能会影响您的整体用户体验。"
+            },
+            "contact": {
+                "title": "有疑问？",
+                "content": "如果您对我们使用 cookie 有任何疑问，请通过 privacy@qianniuspace.com 与我们联系。"
+            }
+        },
+        "consent": {
+            "message": "我们使用 cookie 来改善您的体验并分析网站流量。继续使用我们的网站即表示您同意我们的 cookie 政策。",
+            "accept": "接受",
+            "decline": "拒绝"
         }
-      },
-      "usage": {
-        "title": "我们如何使用您的信息",
-        "content": "我们将您的信息用于以下目的：",
-        "items": {
-          "0": "提供和维护我们的服务，包括生成 AI 驱动的表情",
-          "1": "根据您的使用情况改进我们的服务",
-          "2": "就更新、支持和促销优惠与您沟通",
-          "3": "检测和防止欺诈或滥用我们的服务"
-        }
-      },
-      "sharing": {
-        "title": "信息共享",
-        "content": "我们不会出售您的个人信息。我们仅在必要时与第三方共享您的信息（如与我们的 AI 提供商 Replicate），或在法律要求或得到您明确同意的情况下共享。"
-      },
-      "security": {
-        "title": "数据安全",
-        "content": "我们采用行业标准的安全措施来保护您的个人信息。这包括加密、安全服务器和定期安全审计。但是，通过互联网传输的方法并非100%安全，我们不能保证绝对的安全性。"
-      },
-      "cookies": {
-        "title": "Cookie 和跟踪",
-        "content": "我们使用 cookie 和类似的跟踪技术来改善您在我们网站上的体验。您可以通过浏览器首选项控制 cookie 设置。"
-      },
-      "rights": {
-        "title": "您的权利",
-        "content": "关于您的个人信息，您享有以下权利：",
-        "items": {
-          "0": "访问和下载您的个人数据",
-          "1": "请求更正您的信息",
-          "2": "删除您的账户和相关数据",
-          "3": "选择退出营销通信"
-        }
-      },
-      "contact": {
-        "title": "联系我们",
-        "content": "如果您对本隐私政策或我们的数据实践有任何疑问，请通过 privacy@qianniuspace.com 与我们联系。"
-      }
-    }
-  },
-  "terms": {
-    "title": "服务条款",
-    "lastUpdated": "最后更新时间",
-    "date": "2024年3月15日",
-    "sections": {
-      "acceptance": {
-        "title": "条款接受",
-        "content": "访问或使用 Emoji 制作器，即表示您同意接受这些服务条款的约束。如果您不同意这些条款的任何部分，请勿使用我们的服务。"
-      },
-      "services": {
-        "title": "服务说明",
-        "content": "Emoji 制作器提供 AI 驱动的自定义表情制作平台。我们保留随时修改、暂停或终止服务任何部分的权利。"
-      },
-      "accounts": {
-        "title": "用户账户",
-        "content": "创建账户时，您必须：",
-        "items": {
-          "0": "提供准确完整的信息",
-          "1": "维护账户凭证的安全",
-          "2": "及时更新您的信息变更",
-          "3": "对账户下的所有活动负责"
-        }
-      },
-      "content": {
-        "title": "用户内容",
-        "content": "您保留对您内容的所有权，但授予我们以下许可：",
-        "items": {
-          "0": "使用、展示和存储您的内容",
-          "1": "修改内容以提供服务",
-          "2": "根据您的设置分享内容",
-          "3": "删除违反我们政策的内容",
-          "4": "使用内容改进服务"
-        }
-      },
-      "payment": {
-        "title": "支付条款",
-        "content": "专业版订阅按月或按年提前收费。退款按照我们的退款政策处理。免费积分和促销优惠可能受额外条款约束。"
-      },
-      "termination": {
-        "title": "账户终止",
-        "content": "对于违反我们条款、从事欺诈活动或损害我们社区的账户，我们可能会暂停或终止其使用。您可以随时删除您的账户。"
-      },
-      "disclaimer": {
-        "title": "免责声明",
-        "content": "我们的服务按 '现状' 提供，不提供任何明示或暗示的保证。我们不保证服务不会中断或无错误。"
-      },
-      "contact": {
-        "title": "联系信息",
-        "content": "如果您对这些服务条款有任何疑问，请通过 terms@qianniuspace.com 与我们联系。"
-      }
-    }
-  },
-  "cookies": {
-    "title": "Cookie 政策",
-    "lastUpdated": "最后更新时间",
-    "date": "2024年3月15日",
-    "sections": {
-      "introduction": {
-        "title": "简介",
-        "content": "本 Cookie 政策说明了 Emoji 制作器如何使用 cookie 和类似技术在您访问我们的网站时识别您。它解释了这些技术是什么、我们为什么使用它们，以及您控制我们使用它们的权利。"
-      },
-      "what": {
-        "title": "什么是 Cookie",
-        "content": "Cookie 是在您访问网站时放置在您设备上的小型数据文件。它们被广泛用于使网站更高效地运行并提供报告信息。"
-      },
-      "types": {
-        "title": "我们使用的 Cookie 类型",
-        "content": "我们使用以下类型的 Cookie：",
-        "items": {
-          "0": "必要 Cookie：网站基本功能所需",
-          "1": "性能 Cookie：帮助我们了解访问者如何使用我们的网站",
-          "2": "功能 Cookie：记住您的偏好设置",
-          "3": "定向 Cookie：帮助使我们的广告更相关"
-        }
-      },
-      "control": {
-        "title": "您的 Cookie 控制",
-        "content": "大多数浏览器允许您通过其设置控制 cookie。但是，如果您限制网站设置 cookie 的能力，可能会影响您的整体用户体验。"
-      },
-      "contact": {
-        "title": "有疑问？",
-        "content": "如果您对我们使用 cookie 有任何疑问，请通过 privacy@qianniuspace.com 与我们联系。"
-      }
     },
-    "consent": {
-      "message": "我们使用 cookie 来改善您的体验并分析网站流量。继续使用我们的网站即表示您同意我们的 cookie 政策。",
-      "accept": "接受",
-      "decline": "拒绝"
+    "preview": {
+        "prefix": "让我们一起 ",
+        "typewriter": {
+            "create": "创造有趣表情",
+            "customize": "定制专属 emoji",
+            "express": "表达独特想法",
+            "share": "分享欢乐时刻",
+            "inspire": "用 AI激发创意"
+        }
     }
-  }
 }

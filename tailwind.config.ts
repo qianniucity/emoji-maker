@@ -61,6 +61,16 @@ const config: Config = {
   			'blue-50': '#eff6ff',
   			'indigo-50': '#eef2ff',
   		},
+  		animation: {
+  			gradient: "gradient 8s linear infinite",
+  		},
+  		keyframes: {
+  			gradient: {
+  				to: {
+  					backgroundPosition: "var(--bg-size) 0",
+  				},
+  			},
+  		},
   	}
   },
   plugins: [
