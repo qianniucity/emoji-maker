@@ -23,7 +23,7 @@ export function EmojiGrid() {
         setTimeout(() => {
           setShowEmpty(true);
         }, 5000);
-      } catch (error) {
+      } catch  {
         toast({
           title: 'Error',
           description: 'Failed to fetch emojis',

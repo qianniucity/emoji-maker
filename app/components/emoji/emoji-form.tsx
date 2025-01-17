@@ -13,7 +13,6 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/app/components/ui/dialog";
 import type { FormEvent, ChangeEvent } from 'react';
 import { SignInButton } from '@clerk/nextjs';
