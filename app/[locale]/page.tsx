@@ -1,8 +1,8 @@
 'use client';
 
 import { Suspense } from 'react';
-import { EmojiGrid } from "@/app/components/emoji-grid";
-import { EmojiForm } from "@/app/components/emoji-form";
+import { EmojiGrid } from "@/app/components/emoji/emoji-grid";
+import { EmojiForm } from "@/app/components/emoji/emoji-form";
 import { useTranslation } from "@/app/i18n/hooks/useTranslation";
 import { LoadingSpinner } from "@/app/components/ui/loading-spinner";
 
